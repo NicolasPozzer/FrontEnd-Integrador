@@ -1,0 +1,9 @@
+/*==========================*/
+/*Color NavBar*/
+/*==========================*/
+.navbar.navbar-expand-lg.bg-body-tertiary{
+    background-color: #363636;background-image: linear-gradient(90deg, #535353 0%, #535353 100%);
+}
+
+
+

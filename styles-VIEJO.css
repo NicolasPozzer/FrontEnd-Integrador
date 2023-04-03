@@ -1,0 +1,226 @@
+/*==========================*/
+/*fuentes*/
+/*==========================*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*==========================*/
+/*Color NavBar*/
+/*==========================*/
+.navbar.navbar-expand-lg.bg-body-tertiary{
+background-color: #363636;background-image: linear-gradient(90deg, #535353 0%, #535353 100%);
+}
+
+
+
+/*==========================*/
+/*Carrousel*/
+/*==========================*/
+
+/*Texto sobre la Imagen*/
+.carousel-caption {
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+  }
+/*Texto sobre el segundo slide que habia q modificarlo*/
+.carousel-caption-slide2{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+  }
+  /*TAMANO DEL CAROUSEL*/
+.carousel-inner{
+
+    max-height: 55rem;
+}
+
+
+  
+
+/*==========================*/
+/*COLORES LOGOS REDES*/
+/*==========================*/
+
+/*USER LOGIN*/
+.fa-solid.fa-user-lock.fa-2xl:hover{
+    color: darkgreen;
+}
+
+/*USER LOGOUT*/
+.fa-solid.fa-user-gear.fa-2xl:hover{
+    color: darkgreen;
+}
+
+
+
+
+/*LINKEDIN*/
+.fa-brands.fa-linkedin.fa-2xl:hover{
+    color: rgb(7, 145, 209);
+}
+/*GITHUB*/
+.fa-brands.fa-github.fa-2xl:hover{
+    color:#d1d1d1;
+}
+
+/*INSTAGRAM*/
+.fa-brands.fa-instagram.fa-2xl:hover{
+    color: rgba(255, 0, 106, 0.397);
+
+
+}
+
+.list-group{
+    --bs-list-group-bg: transparent;
+    --bs-list-group-border-color: transparent;
+}
+
+/*Color de fondo para ventana login*/
+.modal-content{
+   /* */
+    background-color: #c5c5c5;background-image: linear-gradient(90deg, #c5c5c5 0%, #c5c5c5 100%);
+
+    /*SI QUEREMOS AGREGAR UNA IMAGEN UTILIZAMOS EL SIGUIENTE COMANDO
+    background-image: url("/PortfolioFrontend/Assets/images/cascada-con-auroras-polares_3740x2104_xtrafondos.com.jpg");
+    */
+}
+
+/*==========================*/
+/*ABOUT ME*/
+/*==========================*/
+
+#sobre-mi{
+    margin-top: 10rem;
+    
+}
+
+.col-6{
+    color: black;
+}
+
+
+/*==========================*/
+/*SECCION EXPERIENCIA*/
+/*==========================*/
+#titulo-experiencia{
+    margin-top: 20rem;
+}
+
+#columna-izquierda-experiencia{
+    margin-top: 9rem;
+    margin-left: 22rem;
+    
+}
+
+#columna-derecha-experiencia{
+    margin-top: 25rem;
+    margin-right: 20rem;
+    margin-left: -24rem;
+}
+
+
+
+/*==========================*/
+/*SECCION Educacion*/
+/*==========================*/
+
+#titulo-educacion{
+    margin-top: 10rem;
+}
+
+#columna-izquierda-educacion{
+    
+    margin-top: 9rem;
+    margin-left: 22rem;
+}
+
+
+#columna-derecha-educacion{
+    margin-top: 25rem;
+    margin-right: 20rem;
+    margin-left: -24rem;
+    
+}
+
+
+
+
+/*==========================*/
+/*Skills HABILIDADES*/
+/*==========================*/
+
+#habilidades-texto{
+    margin-top: 10rem;
+}
+
+#descripcion-habilidades{
+    margin-right: 35%;
+    margin-left: 35%;
+}
+
+
+
+/*==========================*/
+/*PROYECTOS*/
+/*==========================*/
+
+#proyectos-texto{
+    margin-top: 10rem;
+}
+
+#descripcion-proyectos{
+    margin-right: 35%;
+    margin-left: 35%;
+}
+
+
+
+
+
+
+
+/*==========================*/
+/*Herramientas dashboard*/
+/*==========================*/
+
+/*LAPIZ Y TACHO DE BASURA*/
+#pencil-trash{
+    margin-left: 5rem;
+}
+
+
+/*lapiz COLOR*/
+.fa-solid.fa-pencil.fa-2xl:hover{
+    color: rgb(103, 109, 103);
+}
+
+/*BASURERO COLOR*/
+.fa-solid.fa-trash.fa-2xl:hover{
+    color: rgb(103, 109, 103);
+}
+
+/*PENCIL DE CAROUSEL*/
+#pencil-carousel{
+    color: aliceblue;
+    margin-top: 5rem;
+}
+#pencil-carousel:hover{
+    color: rgb(15, 135, 240);
+    
+}
+
+/*============*/

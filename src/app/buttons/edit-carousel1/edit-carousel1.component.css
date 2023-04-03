@@ -1,0 +1,9 @@
+/*PENCIL DE CAROUSEL*/
+#pencil-carousel{
+    color: aliceblue;
+    margin-top: 5rem;
+}
+#pencil-carousel:hover{
+    color: rgb(103, 109, 103);
+    
+}
