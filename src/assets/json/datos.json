@@ -1,0 +1,18 @@
+{
+    "miNombre": "Nicolas Pozzer",
+
+    "educacion":[
+    {
+        "id": 1,
+        "inicio": "Marzo 2022",
+        "fin": "Septiembre 2022",
+        "nivel": "Se Programar"
+    },
+
+    {
+        "inicio": "Junio 2022",
+        "fin": "Diciembre 2022",
+        "nivel": "Fatima secundario"
+    }]
+
+}
