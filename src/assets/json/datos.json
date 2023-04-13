@@ -1,9 +1,10 @@
 {
-    "miNombre": "Nicolas Pozzer",
+    "miNombre": "Nicolas .JSON",
+    "especialidad": "Fullstack Developer Jr.",
 
     "educacion":[
     {
-        "id": 1,
+        
         "inicio": "Marzo 2022",
         "fin": "Septiembre 2022",
         "nivel": "Se Programar"

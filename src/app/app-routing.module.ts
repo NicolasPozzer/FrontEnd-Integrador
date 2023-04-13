@@ -6,9 +6,8 @@ import { ErrorComponent } from './components/error/error.component';
 
 
 const routes: Routes = [
-  {path: 'user', component:UserComponent},
+  {path: '', component:UserComponent},
   {path: 'admin', component:AdminComponent},
-  {path: '', redirectTo: '/user', pathMatch: 'full'},
   {path: '**', component:ErrorComponent}
 ];
 
