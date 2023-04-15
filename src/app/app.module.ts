@@ -31,8 +31,11 @@ import { NavbarAdminComponent } from './components/navbar-admin/navbar-admin.com
 import { LogoutComponent } from './components/modals/logout/logout.component';
 import { RedesAdminComponent } from './components/redes-admin/redes-admin.component';
 import { ErrorComponent } from './components/error/error.component';
-//se declara el servicio
-import { PersonaService } from './services/persona.service';
+import { SkillsComponent } from './components/skills/skills.component';
+import { Skill1Component } from './components/skills/skill1/skill1.component';
+import { Skill2Component } from './components/skills/skill2/skill2.component';
+import { Skill3Component } from './components/skills/skill3/skill3.component';
+
 
 
 
@@ -64,12 +67,12 @@ import { PersonaService } from './services/persona.service';
     NavbarAdminComponent,
     LogoutComponent,
     RedesAdminComponent,
-    ErrorComponent
+    ErrorComponent,
+    SkillsComponent,
+    Skill1Component,
+    Skill2Component,
+    Skill3Component
     
-
-
-
-
   ],
   imports: [
     BrowserModule,
@@ -77,7 +80,7 @@ import { PersonaService } from './services/persona.service';
     HttpClientModule
   ],
   
-  providers: [PersonaService], //dentro de providers va nuestros servicios
+  providers: [], //dentro de providers va nuestros servicios
   bootstrap: [AppComponent]
 })
 export class AppModule { }

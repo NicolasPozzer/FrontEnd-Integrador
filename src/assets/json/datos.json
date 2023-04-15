@@ -1,19 +1,27 @@
 {
-    "miNombre": "Nicolas .JSON",
+    "miNombre": "Nicolas Pozzer",
     "especialidad": "Fullstack Developer Jr.",
+    "aboutMe": "Esto es un Ejemploo Mi nombre es Nicolas Pozzer me dedico al mundo de la programacion, tambien me gusta jugar al tenis y hacer todo tipo de deporte.",
+    "slide1": "../../assets/img/slide1.jpg",
+    "slide2": "../../assets/img/slide2.jpg",
+    "slide3": "../../assets/img/slide3.jpg",
+    "imagenPerfil": "../../assets/img/avatar.jpg",
 
     "educacion":[
     {
-        
+        "titulo": "Marzo 2022",
         "inicio": "Marzo 2022",
         "fin": "Septiembre 2022",
-        "nivel": "Se Programar"
+        "nivel": "Se Programar",
+        "descripcion": "Marzo 2022"
     },
 
     {
+        "titulo": "Marzo 2022",
         "inicio": "Junio 2022",
         "fin": "Diciembre 2022",
-        "nivel": "Fatima secundario"
+        "nivel": "Fatima secundario",
+        "descripcion": "Marzo 2022"
     }]
 
 }
