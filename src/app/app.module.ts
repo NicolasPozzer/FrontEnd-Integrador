@@ -38,6 +38,9 @@ import { Skill3Component } from './components/skills/skill3/skill3.component';
 import { ItemExpeduComponent } from './components/item-expedu/item-expedu.component';
 import { EducacionComponent } from './components/educacion/educacion.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
+import { ModalEducationComponent } from './components/modals/modal-education/modal-education.component';
+import { ModalExperienceComponent } from './components/modals/modal-experience/modal-experience.component';
+import { ProyectosComponent } from './components/proyectos/proyectos.component';
 
 
 
@@ -80,6 +83,9 @@ import { ExperienciaComponent } from './components/experiencia/experiencia.compo
     ItemExpeduComponent,
     EducacionComponent,
     ExperienciaComponent,
+    ModalEducationComponent,
+    ModalExperienceComponent,
+    ProyectosComponent,
  
     
   ],
