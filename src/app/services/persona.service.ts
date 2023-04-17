@@ -9,16 +9,12 @@ import { HttpClient,HttpHandler } from '@angular/common/http';
   providedIn: 'root'
 })
 
-
-
 export class PersonaService {
-
 
   //3_Este primer HTTP se llama Alias
   constructor(
     private http:HttpClient
   ) { }
-
 
   //4_Metosdo observable que devuelve los datos
   getDatos(): Observable<any> {

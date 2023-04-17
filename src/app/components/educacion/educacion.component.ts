@@ -9,6 +9,8 @@ import { PersonaService } from 'src/app/services/persona.service';
 export class EducacionComponent implements OnInit {
 
   educacion: any[]; // se inicializa la variable
+  nomHabilidad: string = '';
+  progreso: number = 0;
 
   constructor(private personaService: PersonaService) {
     this.educacion = [];

@@ -1,11 +1,12 @@
 {
-    "miNombre": "Nicolas Pozzer",
-    "especialidad": "Fullstack Developer Jr.",
-    "aboutMe": "Esto es un Ejemploo Mi nombre es Nicolas Pozzer me dedico al mundo de la programacion, tambien me gusta jugar al tenis y hacer todo tipo de deporte.",
-    "slide1": "../../assets/img/slide1.jpg",
-    "slide2": "../../assets/img/slide2.jpg",
-    "slide3": "../../assets/img/slide3.jpg",
-    "imagenPerfil": "../../assets/img/avatar.jpg",
+    
+    "miNombre":["Nicolas Pozzer"],
+    "especialidad": ["Fullstack Developer Jr."],
+    "aboutMe": ["Esto es un Ejemploo Mi nombre es Nicolas Pozzer me dedico al mundo de la programacion, tambien me gusta jugar al tenis y hacer todo tipo de deporte."],
+    "slide1": ["../../assets/img/slide1.jpg"],
+    "slide2": ["../../assets/img/slide2.jpg"],
+    "slide3": ["../../assets/img/slide3.jpg"],
+    "imagenPerfil": ["../../assets/img/avatar.jpg"],
 
     "educacion":[
     {
