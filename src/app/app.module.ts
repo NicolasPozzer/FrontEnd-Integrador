@@ -35,6 +35,11 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { Skill1Component } from './components/skills/skill1/skill1.component';
 import { Skill2Component } from './components/skills/skill2/skill2.component';
 import { Skill3Component } from './components/skills/skill3/skill3.component';
+import { ItemExpeduComponent } from './components/item-expedu/item-expedu.component';
+import { EducacionComponent } from './components/educacion/educacion.component';
+import { ExperienciaComponent } from './components/experiencia/experiencia.component';
+
+
 
 
 
@@ -71,7 +76,11 @@ import { Skill3Component } from './components/skills/skill3/skill3.component';
     SkillsComponent,
     Skill1Component,
     Skill2Component,
-    Skill3Component
+    Skill3Component,
+    ItemExpeduComponent,
+    EducacionComponent,
+    ExperienciaComponent,
+ 
     
   ],
   imports: [
