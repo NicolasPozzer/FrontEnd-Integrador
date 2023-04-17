@@ -9,19 +9,58 @@
 
     "educacion":[
     {
-        "titulo": "Marzo 2022",
+        "titulo": "Primaria nacional chaco",
         "inicio": "Marzo 2022",
         "fin": "Septiembre 2022",
         "nivel": "Se Programar",
-        "descripcion": "Marzo 2022"
+        "descripcion": "Un buen lugar de trabajo"
     },
-
     {
-        "titulo": "Marzo 2022",
+        "titulo": "Secundario competo",
         "inicio": "Junio 2022",
         "fin": "Diciembre 2022",
         "nivel": "Fatima secundario",
-        "descripcion": "Marzo 2022"
-    }]
+        "descripcion": "alta escuela esta muy buena"
+    }],
 
+    "skills1":[{
+        "nomHabilidad": "gsgsggg",
+        "width": "65%"
+    },
+    {
+        "nomHabilidad": "Jagsdgsdsfvvv",
+        "width": "30%"
+    },
+    {"nomHabilidad": "gsgsggg",
+        "width": "65%"
+    },
+    {
+        "nomHabilidad": "Jagsdgsdsfvvv",
+        "width": "30%"
+    }],
+
+    "skills2":[{
+        "nomHabilidad": "fsgg",
+        "width": "30%"
+    },
+    {
+        "nomHabilidad": "sss",
+        "width": "100%"
+    }],
+
+    "skills3":[{
+        "nomHabilidad": "aaaaaaaaaaaaaaaaaaa",
+        "width": "80%"
+    },
+    {
+        "nomHabilidad": "Jf",
+        "width": "10%"
+    },
+    {"nomHabilidad": "gsgsggg",
+        "width": "65%"
+    },
+    {
+        "nomHabilidad": "Jagsdgsdsfvvv",
+        "width": "30%"
+    }]
 }

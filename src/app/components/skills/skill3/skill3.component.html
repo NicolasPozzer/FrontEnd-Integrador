@@ -1,31 +1,8 @@
 <!--grafica-->
-<div>
-    <h5>Comunicativo</h5>
-  </div>
-  <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-    <div class="progress-bar" style="width: 25%"></div>
-  </div>
-  <br>
-
-  <div>
-    <h5>Colaborativo</h5>
-  </div>
-  <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-    <div class="progress-bar" style="width: 50%"></div>
+<div *ngFor="let skill of skills3">
+  <h5>{{ skill.nomHabilidad }}</h5>
+ <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar" [style.width]="skill.width"></div>
   </div>
   <br>
-
-  <div>
-    <h5>Empático</h5>
-  </div>
-  <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-    <div class="progress-bar" style="width: 75%"></div>
-  </div>
-  <br>
-
-  <div>
-    <h5>Autodidácta</h5>
-  </div>
-  <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-    <div class="progress-bar" style="width: 100%"></div>
-  </div>
+</div>
