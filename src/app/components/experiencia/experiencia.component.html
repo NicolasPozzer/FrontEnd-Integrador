@@ -1,1 +1,15 @@
-<p>experiencia works!</p>
+<div *ngFor = "let exp of experiencia" class="container">
+  <div class="image">
+   <img src="../../../assets/img/item_extend.png" alt="item_image">
+  </div>
+  <div class="text">
+      <h4>{{ exp.titulo }}</h4>
+      <p>{{ exp.inicio }} - {{ exp.fin }}</p>
+      <p>{{ exp.nivel }}</p>
+      <p>{{ exp.descripcion }}</p>
+  </div>
+  <div id="pencil-trash" class="mx-auto">
+      <li class="list-group-item mt-3 mb-5"><i class="fa-solid fa-pencil fa-2xl" type="button" data-bs-toggle="modal" data-bs-target="#1erexperiencia-modal"></i>
+      <li class="list-group-item mt-2"><i class="fa-solid fa-trash fa-2xl" type="button" data-bs-toggle="modal" data-bs-target="#modal-clear1er-experiencia"></i>
+    </div>
+</div>

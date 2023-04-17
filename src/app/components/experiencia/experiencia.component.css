@@ -1,0 +1,23 @@
+/*#container_edu{margin-left: 10rem; margin-right: 5rem;}*/
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.image {
+    flex: 1;
+}
+  
+.text {
+    flex: 2;
+    grid-auto-flow: row;
+    margin-left: -7rem;
+    margin-right: 13rem;
+}
+
+.list-group-item{
+
+    margin-left: -10rem;
+}
+  

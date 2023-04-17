@@ -1,1 +1,15 @@
-<p>educacion works!</p>
+<div *ngFor = "let educa of educacion" class="container">
+    <div class="image">
+     <img src="../../../assets/img/item_extend.png" alt="item_image">
+    </div>
+    <div class="text">
+        <h4>{{ educa.titulo }}</h4>
+        <p>{{ educa.inicio }} - {{ educa.fin }}</p>
+        <p>{{ educa.nivel }}</p>
+        <p>{{ educa.descripcion }}</p>
+    </div>
+    <div id="pencil-trash" class="mx-auto">
+        <li class="list-group-item mt-3 mb-5"><i class="fa-solid fa-pencil fa-2xl" type="button" data-bs-toggle="modal" data-bs-target="#1erexperiencia-modal"></i>
+        <li class="list-group-item mt-2"><i class="fa-solid fa-trash fa-2xl" type="button" data-bs-toggle="modal" data-bs-target="#modal-clear1er-experiencia"></i>
+      </div>
+</div>

@@ -1,1 +1,10 @@
-#expyedu_container{margin-top: 10rem;}
+#expyedu_container{
+    margin-top: 10rem;
+    margin-left: 5rem;
+}
+#titulo-educacion{
+    margin-left: 1rem;
+}
+#titulo-experiencia{
+    margin-left: 1rem;
+}

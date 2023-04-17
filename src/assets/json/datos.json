@@ -13,7 +13,7 @@
         "inicio": "Marzo 2022",
         "fin": "Septiembre 2022",
         "nivel": "Se Programar",
-        "descripcion": "Un buen lugar de trabajo"
+        "descripcion": "Desarrollo de mejoras y mantenimiento del sistema utilizando tecnologías como ser: Angular, Java, Spring Boot, Oracle DB, Jenkins y Kubernetes."
     },
     {
         "titulo": "Secundario competo",
@@ -22,6 +22,22 @@
         "nivel": "Fatima secundario",
         "descripcion": "alta escuela esta muy buena"
     }],
+
+    "experiencia":[
+        {
+            "titulo": "Primaria nacional chaco",
+            "inicio": "Marzo 2022",
+            "fin": "Septiembre 2022",
+            "nivel": "Se Programar",
+            "descripcion": "Desarrollo de mejoras y mantenimiento del sistema utilizando tecnologías como ser: Angular, Java, Spring Boot, Oracle DB, Jenkins y Kubernetes."
+        },
+        {
+            "titulo": "Secundario competo",
+            "inicio": "Junio 2022",
+            "fin": "Diciembre 2022",
+            "nivel": "Fatima secundario",
+            "descripcion": "alta escuela esta muy buena"
+        }],
 
     "skills1":[{
         "nomHabilidad": "gsgsggg",
