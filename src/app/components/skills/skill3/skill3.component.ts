@@ -17,8 +17,9 @@ export class Skill3Component implements OnInit {
   }
 
   ngOnInit(): void {
+    /*
     this.personaService.getDatos().subscribe(datos => {
       this.skills3 = datos.skills3;
-    });
+    });*/
   }
 }

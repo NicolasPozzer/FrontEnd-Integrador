@@ -6,7 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { LoginComponent } from './components/modals/login/login.component';
+import { LoginComponent } from './components/login/login.component';
 import { RedesComponent } from './components/redes/redes.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { Carousel1Component } from './components/modals/carousel1/carousel1.component';
@@ -41,7 +41,8 @@ import { ExperienciaComponent } from './components/experiencia/experiencia.compo
 import { ModalEducationComponent } from './components/modals/modal-education/modal-education.component';
 import { ModalExperienceComponent } from './components/modals/modal-experience/modal-experience.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
-
+import { HomeComponent } from './components/home/home.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -86,16 +87,19 @@ import { ProyectosComponent } from './components/proyectos/proyectos.component';
     ModalEducationComponent,
     ModalExperienceComponent,
     ProyectosComponent,
+    HomeComponent
+ 
  
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   
-  providers: [], //dentro de providers va nuestros servicios
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -16,10 +16,10 @@ export class FotoPerfilComponent implements OnInit{
 
 
   ngOnInit(): void {
-    
+    /*
     this.personaService.getDatos().subscribe( datos =>{
       this.imagenPerfil = datos.imagenPerfil
     })
-
+    */
   }
 }

@@ -30,7 +30,7 @@ export class CarouselComponent implements OnInit {
   //11_ Traemos los datos del servicio y el JSON que vamos a utilizar en este componente
   //propiedad
   ngOnInit(): void {
-    
+    /*
     //nos suscribimos a los datos ya que anteriormente eran observables
     this.personaService.getDatos().subscribe(datos => {
       this.miNombre = datos.miNombre;
@@ -38,7 +38,7 @@ export class CarouselComponent implements OnInit {
       this.slide1 = datos.slide1;
       this.slide2 = datos.slide2;
       this.slide3 = datos.slide3;
-    })
+    })*/
 
   }
 }
