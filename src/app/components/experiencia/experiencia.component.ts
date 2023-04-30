@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { PersonaService } from 'src/app/services/persona.service';
+import { SExperienciaService } from 'src/app/services/s-experiencia.service';
+import { TokenService } from 'src/app/services/token.service';
+import { Experiencia } from '../model/experiencia';
 
 @Component({
   selector: 'app-experiencia',
@@ -7,17 +9,23 @@ import { PersonaService } from 'src/app/services/persona.service';
   styleUrls: ['./experiencia.component.css']
 })
 export class ExperienciaComponent implements OnInit {
+  expe: Experiencia[] = [];
 
-  experiencia: any[]; // se inicializa la variable
+  constructor(private sExperiencia: SExperienciaService, private tokenService: TokenService) { }
 
-  constructor(private personaService: PersonaService) {
-    this.experiencia = [];
-  }
+  isLogged = false;
 
   ngOnInit(): void {
-    /*
-    this.personaService.getDatos().subscribe(datos => {
-      this.experiencia = datos.experiencia;
-    });*/
+    this.cargarExperiencia();
+    if (this.tokenService.getToken()) {
+      this.isLogged = true;
+    } else {
+      this.isLogged = false;
+    }
+  }
+
+  cargarExperiencia(): void {
+    this.sExperiencia.lista().subscribe(data => { this.expe = data; })
   }
 }
+

@@ -44,6 +44,7 @@ import { HomeComponent } from './components/home/home.component';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { interceptorProvider } from './services/interceptor-service';
+import { NewExperienciaComponent } from './components/experiencia/new-experiencia/new-experiencia.component';
 
 
 
@@ -87,7 +88,8 @@ import { interceptorProvider } from './services/interceptor-service';
     ModalEducationComponent,
     ModalExperienceComponent,
     ProyectosComponent,
-    HomeComponent
+    HomeComponent,
+    NewExperienciaComponent
  
  
     

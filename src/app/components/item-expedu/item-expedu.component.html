@@ -5,6 +5,9 @@
         <div class="p-3">
             <h2 id="titulo-experiencia" class="text-primary">
               Experiencia Laboral
+              <div class="mx-auto" *ngIf= "isLogged">
+                <i class="fa-solid fa-circle-plus" type="button" data-bs-toggle="modal" data-bs-target="#newexperiencia-modalLabel"></i>
+              </div>
             </h2>
             <app-experiencia></app-experiencia>
         </div>
