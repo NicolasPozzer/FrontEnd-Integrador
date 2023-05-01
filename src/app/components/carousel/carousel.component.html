@@ -4,27 +4,27 @@
     
     <div id="carouselExampleFade" class="carousel slide carousel-fade">
         <div class="carousel-text">
-            <h2>{{ miNombre }}</h2>
-            <p>{{ especialidad }}</p>
-            <!--boton lapiz editar nombre-->
-            <app-edit-name-carousel></app-edit-name-carousel>
+            <h2 id="nombre">{{ persona.nombre }} {{ persona.apellido }}</h2>
+            <p>{{ persona.descripcion }}</p>
+            <!--boton lapiz editar nombre
+            <app-edit-name-carousel></app-edit-name-carousel>-->
           </div>
         <div class="carousel-inner">
             
           
           <div class="carousel-item active">
             <app-edit-carousel1></app-edit-carousel1>
-            <img [src]="slide1" class="d-block w-100" alt="slide2">
+            <img src="./assets/img/slide1.jpg" class="d-block w-100" alt="slide2">
           </div>
 
           <div class="carousel-item">
             <app-edit-carousel2></app-edit-carousel2>
-            <img [src]="slide2" class="d-block w-100" alt="slide2">
+            <img src="./assets/img/slide2.jpg" class="d-block w-100" alt="slide2">
           </div>
 
           <div class="carousel-item">
             <app-edit-carousel3></app-edit-carousel3>
-            <img [src]="slide3" class="d-block w-100" alt="slide3">
+            <img src="./assets/img/slide3.jpg" class="d-block w-100" alt="slide3">
           </div>
 
         </div>

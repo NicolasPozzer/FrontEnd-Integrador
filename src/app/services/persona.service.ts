@@ -11,9 +11,26 @@ import { persona } from '../components/model/persona.model';
 export class PersonaService {
   URL = environment.URL + 'personas/';
 
-  constructor(private http: HttpClient) { }
+  constructor(private httpClient: HttpClient) { }
 
   public getPersona(): Observable<persona>{
-    return this.http.get<persona>(this.URL+ 'detail/1');
+    return this.httpClient.get<persona>(this.URL+ 'detail/1');
   }
+
+  
+  public lista(): Observable<persona[]>{
+    return this.httpClient.get<persona[]>(this.URL + 'lista');
+  }
+
+  public update(id: number, persona: persona): Observable<any>{
+    return this.httpClient.put<any>(this.URL + `update/${id}`, persona);
+  }
+
 }
+
+
+
+
+
+
+

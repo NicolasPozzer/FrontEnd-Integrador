@@ -20,7 +20,6 @@ import { AboutmeComponent } from './components/aboutme/aboutme.component';
 import { FotoPerfilComponent } from './components/foto-perfil/foto-perfil.component';
 import { EditFotoPerfilComponent } from './components/buttons/edit-foto-perfil/edit-foto-perfil.component';
 import { ModalFotoPerfilComponent } from './components/modals/modal-foto-perfil/modal-foto-perfil.component';
-import { EditAboutmeComponent } from './components/buttons/edit-aboutme/edit-aboutme.component';
 import { TrashAboutmeComponent } from './components/buttons/trash-aboutme/trash-aboutme.component';
 import { ModalEditAboutmeComponent } from './components/modals/modal-edit-aboutme/modal-edit-aboutme.component';
 import { ModalTrashAboutmeComponent } from './components/modals/modal-trash-aboutme/modal-trash-aboutme.component';
@@ -46,6 +45,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { interceptorProvider } from './services/interceptor-service';
 import { NewExperienciaComponent } from './components/experiencia/new-experiencia/new-experiencia.component';
 import { EditExperienciaComponent } from './components/experiencia/edit-experiencia/edit-experiencia.component';
+import { EditAboutmeComponent } from './components/aboutme/edit-aboutme/edit-aboutme.component';
 
 
 
@@ -69,7 +69,6 @@ import { EditExperienciaComponent } from './components/experiencia/edit-experien
     FotoPerfilComponent,
     EditFotoPerfilComponent,
     ModalFotoPerfilComponent,
-    EditAboutmeComponent,
     TrashAboutmeComponent,
     ModalEditAboutmeComponent,
     ModalTrashAboutmeComponent,
@@ -91,7 +90,8 @@ import { EditExperienciaComponent } from './components/experiencia/edit-experien
     ProyectosComponent,
     HomeComponent,
     NewExperienciaComponent,
-    EditExperienciaComponent
+    EditExperienciaComponent,
+    EditAboutmeComponent
  
  
     

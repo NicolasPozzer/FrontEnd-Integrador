@@ -8,14 +8,15 @@
     <div class="row">
       <div class="col-3">
 
-        <app-foto-perfil></app-foto-perfil>
+        <!--<img src = {{ persona.img }} class="rounded-circle">-->
+        <div id="pencil-trash" class="mx-auto" *ngIf="isLogged">
         <app-edit-foto-perfil></app-edit-foto-perfil>
+        </div>
       </div>
 
       <div class="col-6 mt-5 d-flex">
-        <p id="nombre">asassd{{ persona.nombre }}</p>
+        <p id="nombre">{{ persona.sobremi }}</p>
         <div id="pencil-trash">
-          <app-edit-aboutme></app-edit-aboutme>
           <app-trash-aboutme></app-trash-aboutme>
         </div>
       </div>
