@@ -1,5 +1,3 @@
-<p>HOLA QUE TAL</p>
-
 <div *ngFor="let Experiencia of expe" class="container">
   <div class="image">
     <img src="../../../assets/img/item_extend.png" alt="item_image">
@@ -11,11 +9,17 @@
     <p>{{ Experiencia.descripcionE }}</p>
   </div>
   <div id="pencil-trash" class="mx-auto" *ngIf="isLogged">
-    <i class="fa-solid fa-pencil fa-2xl" type="button" data-bs-toggle="modal"
-      data-bs-target="#1erexperiencia-modal"></i>
-    <i class="fa-solid fa-trash fa-2xl" type="button" data-bs-toggle="modal"
-      data-bs-target="#modal-clear1er-experiencia"></i>
+    <button class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}">
+      <i class="bi bi-pencil-fill"></i> EDITAR</button>
+    <i class="fa-solid fa-trash fa-2xl" type="button"
+      data-bs-toggle="modal"
+      (click)="delete(Experiencia.id)">
+    </i>
+
+    <!--
+         BOTON CON PREGUNTA SI ESTA SEGURO DE ELIMINAR
+      <i class="fa-solid fa-trash fa-2xl" type="button" data-bs-toggle="modal"
+      data-bs-target="#modal-clear1er-experiencia" (click)="delete(Experiencia.id)"></i>
+      -->
   </div>
 </div>
-
-<app-new-experiencia></app-new-experiencia>
