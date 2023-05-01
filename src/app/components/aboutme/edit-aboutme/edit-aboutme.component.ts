@@ -39,8 +39,5 @@ export class EditAboutmeComponent implements OnInit {
     )
   }
 
-  uploadImage($event:any){
-    
-  }
 
 }

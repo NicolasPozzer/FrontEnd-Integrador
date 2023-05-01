@@ -7,12 +7,13 @@
   <div class="container text-center">
     <div class="row">
       <div class="col-3">
-
+        <img [src]="persona.img" class="rounded-circle">
         <!--<img src = {{ persona.img }} class="rounded-circle">-->
         <div id="pencil-trash" class="mx-auto" *ngIf="isLogged">
         <app-edit-foto-perfil></app-edit-foto-perfil>
         </div>
       </div>
+      
 
       <div class="col-6 mt-5 d-flex">
         <p id="nombre">{{ persona.sobremi }}</p>
