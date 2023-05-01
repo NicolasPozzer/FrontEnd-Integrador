@@ -9,7 +9,7 @@ import { EditExperienciaComponent } from './components/experiencia/edit-experien
 const routes: Routes = [
   {path: '', component:HomeComponent},
   {path: 'login', component:LoginComponent},
-  {path: 'editexp', component:EditExperienciaComponent},
+  {path: 'editexp/:id', component:EditExperienciaComponent},
   {path: '**', component:ErrorComponent}
 ];
 
