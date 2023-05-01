@@ -1,18 +1,20 @@
 <p>HOLA QUE TAL</p>
 
-<div *ngFor = "let Experiencia of expe" class="container">
+<div *ngFor="let Experiencia of expe" class="container">
   <div class="image">
-   <img src="../../../assets/img/item_extend.png" alt="item_image">
+    <img src="../../../assets/img/item_extend.png" alt="item_image">
   </div>
   <div class="text">
-      <h4>{{ Experiencia.nombreE }}</h4>
-      <p><!--{{ exp.inicio }} - {{ exp.fin }}--></p>
-      <p><!--{{ exp.nivel }}--></p>
-      <p>{{ Experiencia.descripcionE }}</p>
+    <h4>{{ Experiencia.nombreE }}</h4>
+    <p><!--{{ exp.inicio }} - {{ exp.fin }}--></p>
+    <p><!--{{ exp.nivel }}--></p>
+    <p>{{ Experiencia.descripcionE }}</p>
   </div>
-  <div id="pencil-trash" class="mx-auto" *ngIf= "isLogged">
-    <i class="fa-solid fa-pencil fa-2xl" type="button" data-bs-toggle="modal" data-bs-target="#1erexperiencia-modal"></i>
-    <i class="fa-solid fa-trash fa-2xl" type="button" data-bs-toggle="modal" data-bs-target="#modal-clear1er-experiencia"></i>
+  <div id="pencil-trash" class="mx-auto" *ngIf="isLogged">
+    <i class="fa-solid fa-pencil fa-2xl" type="button" data-bs-toggle="modal"
+      data-bs-target="#1erexperiencia-modal"></i>
+    <i class="fa-solid fa-trash fa-2xl" type="button" data-bs-toggle="modal"
+      data-bs-target="#modal-clear1er-experiencia"></i>
   </div>
 </div>
 
