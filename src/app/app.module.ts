@@ -21,7 +21,6 @@ import { TrashAboutmeComponent } from './components/buttons/trash-aboutme/trash-
 import { ModalTrashAboutmeComponent } from './components/modals/modal-trash-aboutme/modal-trash-aboutme.component';
 import { ErrorComponent } from './components/error/error.component';
 import { SkillsComponent } from './components/skills/skills.component';
-import { Skill1Component } from './components/skills/skill1/skill1.component';
 import { Skill2Component } from './components/skills/skill2/skill2.component';
 import { Skill3Component } from './components/skills/skill3/skill3.component';
 import { ItemExpeduComponent } from './components/item-expedu/item-expedu.component';
@@ -36,6 +35,10 @@ import { NewExperienciaComponent } from './components/experiencia/new-experienci
 import { EditExperienciaComponent } from './components/experiencia/edit-experiencia/edit-experiencia.component';
 import { EditAboutmeComponent } from './components/aboutme/edit-aboutme/edit-aboutme.component';
 import { ButtonEditAboutmeComponent } from './components/buttons/button-edit-aboutme/button-edit-aboutme.component';
+import { Skill1FrontComponent } from './components/skills/skill1-front/skill1-front.component';
+import { Skill2BackComponent } from './components/skills/skill2-back/skill2-back.component';
+import { Skill3SoftComponent } from './components/skills/skill3-soft/skill3-soft.component';
+import { Newskill1Component } from './components/skills/skill1-front/newskill1/newskill1.component';
 
 
 
@@ -60,7 +63,6 @@ import { ButtonEditAboutmeComponent } from './components/buttons/button-edit-abo
     ModalTrashAboutmeComponent,
     ErrorComponent,
     SkillsComponent,
-    Skill1Component,
     Skill2Component,
     Skill3Component,
     ItemExpeduComponent,
@@ -71,7 +73,11 @@ import { ButtonEditAboutmeComponent } from './components/buttons/button-edit-abo
     NewExperienciaComponent,
     EditExperienciaComponent,
     EditAboutmeComponent,
-    ButtonEditAboutmeComponent
+    ButtonEditAboutmeComponent,
+    Skill1FrontComponent,
+    Skill2BackComponent,
+    Skill3SoftComponent,
+    Newskill1Component
  
  
     

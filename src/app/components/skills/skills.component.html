@@ -14,9 +14,14 @@
     
           <div class="col mt-5">  <!--=====COLUMNA 1======-->
             <h3>Front-End</h3>
+              <div class="mx-auto" *ngIf="isLogged">
+                <i class="fa-solid fa-circle-plus" type="button" data-bs-toggle="modal"
+                  data-bs-target="#newskill1-modalLabel"></i>
+              </div>
+            
             <br>
-    
-            <app-skill1></app-skill1>
+            
+            <app-skill1-front></app-skill1-front>
           </div>
           
         
@@ -40,5 +45,4 @@
 </div>
 
                 
-    
-    
+<app-newskill1></app-newskill1>
