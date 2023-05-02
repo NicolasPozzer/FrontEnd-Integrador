@@ -21,19 +21,19 @@ export class EditAboutmeComponent implements OnInit {
       data =>{
         this.persona = data;
       }, err =>{
-        alert("Error al modificar experiencia");
+        alert("Error al modificar");
         this.router.navigate(['']);
       }
     )
   }
 
   onUpdate(): void{
-    const id = this.activatedRouter.snapshot.params['id'];
+    const id = 1;
     this.personaService.update(id, this.persona).subscribe(
       data => {
         this.router.navigate(['']);
       }, err =>{
-         alert("Error al modificar experiencia");
+         alert("Error al modificar");
          this.router.navigate(['']);
       }
     )

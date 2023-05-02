@@ -10,7 +10,7 @@
         <img [src]="persona.img" class="rounded-circle">
         <!--<img src = {{ persona.img }} class="rounded-circle">-->
         <div id="pencil-trash" class="mx-auto" *ngIf="isLogged">
-        <app-edit-foto-perfil></app-edit-foto-perfil>
+          <app-button-edit-aboutme></app-button-edit-aboutme>
         </div>
       </div>
       
@@ -18,7 +18,8 @@
       <div class="col-6 mt-5 d-flex">
         <p id="nombre">{{ persona.sobremi }}</p>
         <div id="pencil-trash">
-          <app-trash-aboutme></app-trash-aboutme>
+          <app-button-edit-aboutme></app-button-edit-aboutme>
+          <!--<app-trash-aboutme></app-trash-aboutme>-->
         </div>
       </div>
 

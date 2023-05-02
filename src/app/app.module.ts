@@ -16,8 +16,6 @@ import { Carousel2Component } from './components/modals/carousel2/carousel2.comp
 import { EditCarousel3Component } from './components/buttons/edit-carousel3/edit-carousel3.component';
 import { Carousel3Component } from './components/modals/carousel3/carousel3.component';
 import { AboutmeComponent } from './components/aboutme/aboutme.component';
-import { FotoPerfilComponent } from './components/foto-perfil/foto-perfil.component';
-import { EditFotoPerfilComponent } from './components/buttons/edit-foto-perfil/edit-foto-perfil.component';
 import { ModalFotoPerfilComponent } from './components/modals/modal-foto-perfil/modal-foto-perfil.component';
 import { TrashAboutmeComponent } from './components/buttons/trash-aboutme/trash-aboutme.component';
 import { ModalTrashAboutmeComponent } from './components/modals/modal-trash-aboutme/modal-trash-aboutme.component';
@@ -37,6 +35,7 @@ import { interceptorProvider } from './services/interceptor-service';
 import { NewExperienciaComponent } from './components/experiencia/new-experiencia/new-experiencia.component';
 import { EditExperienciaComponent } from './components/experiencia/edit-experiencia/edit-experiencia.component';
 import { EditAboutmeComponent } from './components/aboutme/edit-aboutme/edit-aboutme.component';
+import { ButtonEditAboutmeComponent } from './components/buttons/button-edit-aboutme/button-edit-aboutme.component';
 
 
 
@@ -56,8 +55,6 @@ import { EditAboutmeComponent } from './components/aboutme/edit-aboutme/edit-abo
     EditCarousel3Component,
     Carousel3Component,
     AboutmeComponent,
-    FotoPerfilComponent,
-    EditFotoPerfilComponent,
     ModalFotoPerfilComponent,
     TrashAboutmeComponent,
     ModalTrashAboutmeComponent,
@@ -73,7 +70,8 @@ import { EditAboutmeComponent } from './components/aboutme/edit-aboutme/edit-abo
     HomeComponent,
     NewExperienciaComponent,
     EditExperienciaComponent,
-    EditAboutmeComponent
+    EditAboutmeComponent,
+    ButtonEditAboutmeComponent
  
  
     
