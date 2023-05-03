@@ -12,6 +12,7 @@ import { JwtDto } from '../components/model/jwt-dto';
 export class AuthService {
   URL = environment.URL + 'auth/';
 
+
   constructor(private httpClient: HttpClient) { }
 
  public nuevo(nuevoUsuario: NuevoUsuario): Observable<any>{
