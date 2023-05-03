@@ -1,0 +1,20 @@
+<app-navbar></app-navbar>
+<div class="container" *ngIf="project">
+  <div class="row">
+      <div>
+          <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+              <div class="form-group">
+                  <label for="nombreE">Nombre de la empresa</label>
+                  <input type="text" class="form-control" id="nombreE" name="nombreE" [(ngModel)]="project.nombreE" required>
+              </div>
+              <div class="form-group">
+                  <label for="descripcionE">Descripcion de la tarea</label>
+                  <input type="text" class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="project.descripcionE" required>
+              </div>
+              <button class="btn btn-primary">
+                  Actualizar
+              </button>
+          </form>
+      </div>
+  </div>
+</div>

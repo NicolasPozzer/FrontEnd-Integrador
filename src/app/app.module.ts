@@ -9,11 +9,7 @@ import { LoginComponent } from './components/login/login.component';
 import { RedesComponent } from './components/redes/redes.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { Carousel1Component } from './components/modals/carousel1/carousel1.component';
-import { EditCarousel1Component } from './components/buttons/edit-carousel1/edit-carousel1.component';
-import { EditNameCarouselComponent } from './components/buttons/edit-name-carousel/edit-name-carousel.component';
-import { EditCarousel2Component } from './components/buttons/edit-carousel2/edit-carousel2.component';
 import { Carousel2Component } from './components/modals/carousel2/carousel2.component';
-import { EditCarousel3Component } from './components/buttons/edit-carousel3/edit-carousel3.component';
 import { Carousel3Component } from './components/modals/carousel3/carousel3.component';
 import { AboutmeComponent } from './components/aboutme/aboutme.component';
 import { ModalFotoPerfilComponent } from './components/modals/modal-foto-perfil/modal-foto-perfil.component';
@@ -26,7 +22,6 @@ import { Skill3Component } from './components/skills/skill3/skill3.component';
 import { ItemExpeduComponent } from './components/item-expedu/item-expedu.component';
 import { EducacionComponent } from './components/educacion/educacion.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
-import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { HomeComponent } from './components/home/home.component';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
@@ -39,6 +34,10 @@ import { Skill1FrontComponent } from './components/skills/skill1-front/skill1-fr
 import { Skill2BackComponent } from './components/skills/skill2-back/skill2-back.component';
 import { Skill3SoftComponent } from './components/skills/skill3-soft/skill3-soft.component';
 import { Newskill1Component } from './components/skills/skill1-front/newskill1/newskill1.component';
+import { ItemProyectoComponent } from './components/item-proyecto/item-proyecto.component';
+import { ProyectoComponent } from './components/proyecto/proyecto.component';
+import { NewProyectoComponent } from './components/proyecto/new-proyecto/new-proyecto.component';
+import { EditProyectoComponent } from './components/proyecto/edit-proyecto/edit-proyecto.component';
 
 
 
@@ -51,11 +50,7 @@ import { Newskill1Component } from './components/skills/skill1-front/newskill1/n
     RedesComponent,
     CarouselComponent,
     Carousel1Component,
-    EditCarousel1Component,
-    EditNameCarouselComponent,
-    EditCarousel2Component,
     Carousel2Component,
-    EditCarousel3Component,
     Carousel3Component,
     AboutmeComponent,
     ModalFotoPerfilComponent,
@@ -68,7 +63,6 @@ import { Newskill1Component } from './components/skills/skill1-front/newskill1/n
     ItemExpeduComponent,
     EducacionComponent,
     ExperienciaComponent,
-    ProyectosComponent,
     HomeComponent,
     NewExperienciaComponent,
     EditExperienciaComponent,
@@ -77,7 +71,11 @@ import { Newskill1Component } from './components/skills/skill1-front/newskill1/n
     Skill1FrontComponent,
     Skill2BackComponent,
     Skill3SoftComponent,
-    Newskill1Component
+    Newskill1Component,
+    ItemProyectoComponent,
+    ProyectoComponent,
+    NewProyectoComponent,
+    EditProyectoComponent
  
  
     
