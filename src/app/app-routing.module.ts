@@ -6,6 +6,7 @@ import { ErrorComponent } from './components/error/error.component';
 import { EditExperienciaComponent } from './components/experiencia/edit-experiencia/edit-experiencia.component';
 import { EditAboutmeComponent } from './components/aboutme/edit-aboutme/edit-aboutme.component';
 import { EditProyectoComponent } from './components/proyecto/edit-proyecto/edit-proyecto.component';
+import { Editskill1Component } from './components/skills/skill1-front/editskill1/editskill1.component';
 
 
 const routes: Routes = [
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path: 'editexp/:id', component:EditExperienciaComponent},
   {path: 'editacercade/1', component:EditAboutmeComponent},
   {path: 'editproject/:id', component:EditProyectoComponent},
+  {path: 'editskill1/:id', component:Editskill1Component},
   {path: '**', component:ErrorComponent}
 ];
 

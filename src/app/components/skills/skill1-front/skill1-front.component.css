@@ -1,5 +1,21 @@
 .progress-bar{
-    font-size: 13px;
+    font-size: 14px;
     font-weight: bold;
     color: black;
+}
+
+#pencill-trash{
+    margin-top: 10px;
+    padding-left: 20rem;
+    margin-bottom: 1rem;
+    font-size: 11px;
+    margin-left: 20rem;
+}
+
+.fa-solid.fa-pencil.fa-2xl{
+    margin-right: 7px;
+}
+
+#trashhh:hover{
+    color: rgba(255, 0, 0, 0.873);
 }

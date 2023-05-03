@@ -38,6 +38,7 @@ import { ItemProyectoComponent } from './components/item-proyecto/item-proyecto.
 import { ProyectoComponent } from './components/proyecto/proyecto.component';
 import { NewProyectoComponent } from './components/proyecto/new-proyecto/new-proyecto.component';
 import { EditProyectoComponent } from './components/proyecto/edit-proyecto/edit-proyecto.component';
+import { Editskill1Component } from './components/skills/skill1-front/editskill1/editskill1.component';
 
 
 
@@ -75,7 +76,8 @@ import { EditProyectoComponent } from './components/proyecto/edit-proyecto/edit-
     ItemProyectoComponent,
     ProyectoComponent,
     NewProyectoComponent,
-    EditProyectoComponent
+    EditProyectoComponent,
+    Editskill1Component
  
  
     
