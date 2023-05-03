@@ -1,23 +1,27 @@
-<!--======================================-->
-<!--PROYECTOS-->
-<!--======================================-->
-<br><br>><br>
-<br><br>><br>
-<br><br>><br>
-<div>
-  <h2 id="proyectos-texto" class="fw-bold text-center">Proyectos</h2>
-  <p id="descripcion-proyectos" class="fs-6 mt-3 pb-3 text-center ">
-    Algunos de los proyectos en los que he trabajado implementando diversas tecnologías.
-  </p>
+<div class="container-fluid">
+  <!--PROYECTOS-->
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <h2 id="proyectos-texto" class="fw-bold text-center mt-5">Proyectos</h2>
+      <p id="descripcion-proyectos" class="fs-6 mt-3 pb-3 text-center">
+        Algunos de los proyectos en los que he trabajado implementando diversas tecnologías.
+      </p>
+    </div>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="d-flex justify-content-center mb-3">
+        <button *ngIf="isLogged">
+          <i type="button" data-bs-toggle="modal" data-bs-target="#newproyecto-modalLabel">Nuevo Proyecto</i>
+        </button>
+      </div>
+      <app-new-proyecto></app-new-proyecto>
+
+      <div class="container-fluid mx-auto text-center border-celeste">
+        <app-proyecto></app-proyecto>
+      </div>
+      <br><br><br>
+    </div>
+  </div>
 </div>
-
-
-<br><br><br>
-
-
-<div class="mx-auto" *ngIf="isLogged">
-  <i class="fa-solid fa-circle-plus" type="button" data-bs-toggle="modal" data-bs-target="#newproyecto-modalLabel"></i>
-</div>
-
-<app-proyecto></app-proyecto>
-<app-new-proyecto></app-new-proyecto>
