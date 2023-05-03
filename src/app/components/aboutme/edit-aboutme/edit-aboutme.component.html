@@ -1,5 +1,5 @@
 <app-navbar></app-navbar>
-<div class="container" *ngIf="persona">
+<div class="container" *ngIf="persona && isLogged">
     <div class="row">
         <div>
             <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
@@ -31,3 +31,14 @@
         </div>
     </div>
   </div>
+
+  <!-----MENSAJE NO LOGEADO!!----->
+<div class="text-center pt-5" *ngIf="!isLogged">
+    <h1 >
+      NO ESTAS LOGEADO
+    </h1>
+    <h3>
+      Inicia sesion para editar este campo
+    </h3>
+  </div>
+  <!------------------------------>

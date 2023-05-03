@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Skill1front } from 'src/app/components/model/skill1front';
 import { Skill1FrontService } from 'src/app/services/skill1-front.service';
+import { TokenService } from 'src/app/services/token.service';
 
 @Component({
   selector: 'app-editskill1',
@@ -13,9 +14,16 @@ export class Editskill1Component implements OnInit {
   skill1: Skill1front = null;
 
   constructor(private sSkill1: Skill1FrontService, private activatedRouter: ActivatedRoute,
-    private router: Router) { }
+    private router: Router,private tokenService: TokenService) { }
 
-  ngOnInit(): void {
+    isLogged = false;
+  
+    ngOnInit(): void {
+      if (this.tokenService.getToken()) {
+        this.isLogged = true;
+      } else {
+        this.isLogged = false;
+      }
     const id = this.activatedRouter.snapshot.params['id'];
     this.sSkill1.detail(id).subscribe(
       data =>{
