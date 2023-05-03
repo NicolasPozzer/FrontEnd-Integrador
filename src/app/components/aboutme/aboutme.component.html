@@ -16,7 +16,14 @@
       
 
       <div class="col-6 mt-5">
-        <p id="nombre">{{ persona.sobremi }}</p>
+        <div class="d-flex mx-auto" >
+          <p id="nombre">{{ persona.sobremi }}</p>
+          <div id="pencil" *ngIf="isLogged">
+          <app-button-edit-aboutme></app-button-edit-aboutme>
+          </div>
+        </div>
+        
+        
         <div id="pencil-trash">
           <button class="boton-descargar-cv">
             Descargar CV

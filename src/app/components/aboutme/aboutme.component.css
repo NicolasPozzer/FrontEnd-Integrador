@@ -15,7 +15,7 @@
 
 
 /*-------------------------------------*/
-/*--------ESTILO FADE CUADRANTE--------------*/
+/*--------ESTILO FADE BOTON--------------*/
 /*-------------------------------------*/
 .boton-descargar-cv {
     margin-top: 1rem;
@@ -62,3 +62,10 @@
         background-position: 0 0;
     }
   }
+
+
+ /*-------------Lapiz edit---------------*/
+    #pencil {
+    margin-left: 1rem;
+
+ }
