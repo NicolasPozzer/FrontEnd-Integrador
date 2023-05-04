@@ -23,7 +23,7 @@ import { ItemExpeduComponent } from './components/item-expedu/item-expedu.compon
 import { EducacionComponent } from './components/educacion/educacion.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 import { HomeComponent } from './components/home/home.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { interceptorProvider } from './services/interceptor-service';
 import { NewExperienciaComponent } from './components/experiencia/new-experiencia/new-experiencia.component';
@@ -87,7 +87,8 @@ import { Editskill1Component } from './components/skills/skill1-front/editskill1
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ReactiveFormsModule 
   ],
   
   providers: [
