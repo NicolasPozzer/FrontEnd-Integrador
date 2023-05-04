@@ -12,7 +12,6 @@ export class Skill1FrontComponent implements OnInit {
   skill1: Skill1front[] = [];
 
   constructor(private sSkill1: Skill1FrontService, private tokenService: TokenService) { }
-
   isLogged = false;
 
   ngOnInit(): void {

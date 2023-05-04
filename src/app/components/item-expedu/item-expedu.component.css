@@ -8,3 +8,18 @@
 #titulo-experiencia{
     margin-left: 1rem;
 }
+
+.button{
+    margin-top: 4rem;
+    font-size: 18px;
+}
+
+.button:hover{
+    color: rgba(5, 180, 255, 0.601);
+    transition: color 0.5s ease;
+}
+
+.p-3{
+    
+    margin-left: 100px;
+}

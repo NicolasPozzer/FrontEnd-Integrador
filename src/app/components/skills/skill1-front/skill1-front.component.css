@@ -1,8 +1,8 @@
 
 #pencill-trash{
     margin-top: 10px;
-    padding-left: 20rem;
-    margin-bottom: 1rem;
+    padding-left: 160px;
+    margin-bottom: 3rem;
     font-size: 11px;
     margin-left: 20rem;
 }
@@ -13,12 +13,10 @@
 
 #trashhh:hover{
     color: rgba(255, 0, 0, 0.873);
+    cursor: pointer;
 }
 
-.text-center{
-    position: absolute;
-    padding-left: 200px;
-    font-size: 13px;
-    color: black;
-    margin-top: -1px;
+.text{
+    font-size: 15px;
+    padding-left: 10px;
 }

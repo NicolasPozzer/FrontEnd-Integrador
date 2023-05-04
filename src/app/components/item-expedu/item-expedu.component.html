@@ -1,13 +1,17 @@
 <div class="container overflow-hidden">
-  <div class="row gy-5" id="expyedu_container">
+  <div class="row gy-5 mx-auto" id="expyedu_container">
     <div class="col-6">
 
       <div class="p-3">
         <h2 id="titulo-experiencia" class="text-primary">
           Experiencia Laboral
-          <div class="mx-auto" *ngIf="isLogged">
-            <i class="fa-solid fa-circle-plus" type="button" data-bs-toggle="modal"
-              data-bs-target="#newexperiencia-modalLabel"></i>
+          <div *ngIf="isLogged">
+            <button class="button" *ngIf="isLogged">
+              <i type="button" data-bs-toggle="modal"
+                data-bs-target="#newexperiencia-modalLabel">
+                Nuevo Proyecto
+              </i>
+            </button>
           </div>
         </h2>
         <app-experiencia></app-experiencia>
