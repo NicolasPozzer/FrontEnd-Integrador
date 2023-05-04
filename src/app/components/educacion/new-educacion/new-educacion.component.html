@@ -1,0 +1,45 @@
+<!-- Modal1er Experiencia -->
+<div class="modal fade" id="neweducacion-modalLabel" tabindex="-1" aria-labelledby="neweducacion-modalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="neweducacion-modalLabel">Añadir Educacion</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+          <div class="form-group">
+            <label class="mt-2 mb-2" for="nombreE">Nombre del tipo de Educacion.</label>
+            <input type="text" class="form-control mb-4" id="nombreE" name="nombreE" [(ngModel)]="nombreE" required>
+          </div>
+          
+          <div class="form-group">
+            <label class="mt-2 mb-2" for="iniciO">Fecha de inicio(ej: 04/07/2022).</label>
+            <input type="text" class="form-control mb-4" id="iniciO" name="iniciO" [(ngModel)]="iniciO" required>
+          </div>
+
+          <div class="form-group">
+            <label class="mt-2 mb-2" for="fiN">Fecha de fin(ej: 15/03/2023).</label>
+            <input type="text" class="form-control mb-4" id="fiN" name="fiN" [(ngModel)]="fiN" required>
+          </div>
+
+          <div class="form-group">
+            <label class="mt-2 mb-2" for="marcA">Nombre del lugar de Educacion.</label>
+            <input type="text" class="form-control mb-4" id="marcA" name="marcA" [(ngModel)]="marcA" required>
+          </div>
+
+          <div class="form-group">
+            <label class="mt-2 mb-2" for="descripcionE">Descripcion de la Educacion.</label>
+            <input type="text" class="form-control mb-4" id="descripcionE" name="descripcionE" [(ngModel)]="descripcionE"
+              required>
+          </div>
+          <button class="btn btn-primary mt-4" data-bs-dismiss="modal">
+            Agregar Educacion
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>

@@ -9,7 +9,7 @@
             <button class="button" *ngIf="isLogged">
               <i type="button" data-bs-toggle="modal"
                 data-bs-target="#newexperiencia-modalLabel">
-                Nuevo Proyecto
+                Nueva Experiencia
               </i>
             </button>
           </div>
@@ -22,6 +22,14 @@
       <div class="p-3">
         <h2 id="titulo-educacion" class="text-primary">
           Educacion
+          <div *ngIf="isLogged">
+            <button class="button" *ngIf="isLogged">
+              <i type="button" data-bs-toggle="modal"
+                data-bs-target="#neweducacion-modalLabel">
+                Nueva Educacion
+              </i>
+            </button>
+          </div>
         </h2>
         <app-educacion></app-educacion>
       </div>
@@ -30,3 +38,4 @@
 </div>
 
 <app-new-experiencia></app-new-experiencia>
+<app-new-educacion></app-new-educacion>

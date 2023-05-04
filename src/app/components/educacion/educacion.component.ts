@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { PersonaService } from 'src/app/services/persona.service';
+import { TokenService } from 'src/app/services/token.service';
+import { Educacion } from '../model/educacion';
+import { SEducacionService } from 'src/app/services/s-educacion.service';
 
 @Component({
   selector: 'app-educacion',
@@ -7,19 +9,34 @@ import { PersonaService } from 'src/app/services/persona.service';
   styleUrls: ['./educacion.component.css']
 })
 export class EducacionComponent implements OnInit {
+  edu: Educacion[] = [];
 
-  educacion: any[]; // se inicializa la variable
-  nomHabilidad: string = '';
-  progreso: number = 0;
+  constructor(private sEducacion: SEducacionService, private tokenService: TokenService) { }
 
-  constructor(private personaService: PersonaService) {
-    this.educacion = [];
-  }
+  isLogged = false;
 
   ngOnInit(): void {
-    /*
-    this.personaService.getDatos().subscribe(datos => {
-      this.educacion = datos.educacion;
-    });*/
+    this.cargarEducacion();
+    if (this.tokenService.getToken()) {
+      this.isLogged = true;
+    } else {
+      this.isLogged = false;
+    }
+  }
+
+  cargarEducacion(): void {
+    this.sEducacion.lista().subscribe(data => { this.edu = data; })
+  }
+
+  delete(id?: number){
+    if(id != undefined){
+      this.sEducacion.delete(id).subscribe(
+        data => {
+          this.cargarEducacion();
+        }, err => {
+          alert("No se pudo borrar la Educacion");
+        }
+      )
+    }
   }
 }
