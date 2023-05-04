@@ -1,0 +1,44 @@
+<app-navbar></app-navbar>
+<div class="container" *ngIf="edu && isLogged">
+  <div class="row">
+    <div>
+      <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+        <div class="form-group">
+          <label class="mt-4 mb-1" for="nombreE">Nombre del tipo de Educacion.</label>
+          <input type="text" class="form-control mb-4" id="nombreE" name="nombreE" [(ngModel)]="edu.nombreE" required>
+        </div>
+        <div class="form-group">
+          <label class="mt-2 mb-1" for="iniciO">Fecha de inicio(ej: 04/07/2022).</label>
+          <input type="text" class="form-control mb-4" id="iniciO" name="iniciO" [(ngModel)]="edu.iniciO" required>
+        </div>
+        <div class="form-group">
+          <label class="mt-2 mb-1" for="fiN">Fecha de fin(ej: 15/03/2023).</label>
+          <input type="text" class="form-control mb-4" id="fiN" name="fiN" [(ngModel)]="edu.fiN" required>
+        </div>
+        <div class="form-group">
+          <label class="mt-2 mb-1" for="marcA">Nombre del lugar de Educacion.</label>
+          <input type="text" class="form-control mb-4" id="marcA" name="marcA" [(ngModel)]="edu.marcA" required>
+        </div>
+        <div class="form-group">
+          <label class="mt-2 mb-1" for="descripcionE">Descripcion de la Educacion.</label>
+          <input type="text" class="form-control mb-4" id="descripcionE" name="descripcionE"
+            [(ngModel)]="edu.descripcionE" required>
+        </div>
+        <button class="btn btn-primary mt-2">
+          Actualizar
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-----MENSAJE NO LOGEADO!!----->
+<div class="text-center pt-5" *ngIf="!isLogged">
+  <h1>
+    NO ESTAS LOGEADO
+  </h1>
+  <h3>
+    Inicia sesion para editar este campo
+  </h3>
+</div>
+<!------------------------------>

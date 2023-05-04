@@ -113,3 +113,11 @@
 .p-3 {
     padding: 1rem;
 }
+.fa-solid.fa-trash.fa-2xl{
+  margin-left: 10px;;
+}
+
+
+.fa-solid.fa-trash.fa-2xl:hover{
+  color: red;
+}

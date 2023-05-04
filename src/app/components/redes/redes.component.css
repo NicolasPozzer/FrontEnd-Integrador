@@ -2,10 +2,6 @@
 /*COLORES LOGOS REDES*/
 /*==========================*/
 
-/*USER LOGIN*/
-.fa-solid.fa-user-lock.fa-2xl:hover{
-    color: darkgreen;
-}
 
 
 
@@ -15,15 +11,18 @@
 /*LINKEDIN*/
 .fa-brands.fa-linkedin.fa-2xl:hover{
     color: rgb(7, 145, 209);
+    cursor: pointer;
 }
 /*GITHUB*/
 .fa-brands.fa-github.fa-2xl:hover{
     color:#d1d1d1;
+    cursor: pointer;
 }
 
 /*INSTAGRAM*/
 .fa-brands.fa-instagram.fa-2xl:hover{
     color: rgba(255, 0, 106, 0.397);
+    cursor: pointer;
 
 
 }

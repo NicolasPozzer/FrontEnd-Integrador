@@ -4,20 +4,35 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-left: -20%;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 .image {
     flex: 1;
 }
-  
-.text {
-    flex: 2;
-    grid-auto-flow: row;
-    margin-left: -7rem;
-    margin-right: 13rem;
+
+.fa-solid.fa-pencil.fa-2xl{
+    cursor: pointer;
 }
 
-.list-group-item{
 
-    margin-left: -10rem;
+.fa-solid.fa-trash.fa-2xl{
+    margin-left: 10px;
+    margin-top: 9px;
 }
+
+.fa-solid.fa-trash.fa-2xl:hover{
+    
+    color: rgba(255, 0, 0, 0.873);
+}
+
+#pencil-trash{
+    font-size: 13px;
+    padding-left: 160px;
+    display: flex;
+    text-align: center;
+}
+
+
   
