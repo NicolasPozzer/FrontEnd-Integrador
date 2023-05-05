@@ -12,9 +12,7 @@ import { Carousel1Component } from './components/modals/carousel1/carousel1.comp
 import { Carousel2Component } from './components/modals/carousel2/carousel2.component';
 import { Carousel3Component } from './components/modals/carousel3/carousel3.component';
 import { AboutmeComponent } from './components/aboutme/aboutme.component';
-import { ModalFotoPerfilComponent } from './components/modals/modal-foto-perfil/modal-foto-perfil.component';
 import { TrashAboutmeComponent } from './components/buttons/trash-aboutme/trash-aboutme.component';
-import { ModalTrashAboutmeComponent } from './components/modals/modal-trash-aboutme/modal-trash-aboutme.component';
 import { ErrorComponent } from './components/error/error.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ItemExpeduComponent } from './components/item-expedu/item-expedu.component';
@@ -58,9 +56,7 @@ import { Editskill3Component } from './components/skills/skill3-soft/editskill3/
     Carousel2Component,
     Carousel3Component,
     AboutmeComponent,
-    ModalFotoPerfilComponent,
     TrashAboutmeComponent,
-    ModalTrashAboutmeComponent,
     ErrorComponent,
     SkillsComponent,
     ItemExpeduComponent,

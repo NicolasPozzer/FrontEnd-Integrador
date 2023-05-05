@@ -2,23 +2,35 @@
 /*ABOUT ME*/
 /*==========================*/
 
-
-/*==========================*/
-#sobre-mi{
-    margin-top: 10rem;
-    
+.rounded-circle{
+    margin-left: 37%;
+    position: relative;
+    width: 220px;
+    height: 220px;
 }
 
-.col-6{
-    color: black;
+
+/*Titulo sobre Mi*/
+.text-center{
+    padding-top: 120px;
+    margin-bottom: -120px;
 }
 
+#palabras-container{
+    position: relative;
+    margin-top: 12%;
+    padding-right: 20%;
+}
+
+#edit-boton{
+    margin-top: 7%;
+}
 
 /*-------------------------------------*/
 /*--------ESTILO FADE BOTON--------------*/
 /*-------------------------------------*/
 .boton-descargar-cv {
-    margin-top: 1rem;
+    margin-left: 2%;
     background: black;
     cursor: pointer;
     border: none;
@@ -69,3 +81,35 @@
     margin-left: 1rem;
 
  }
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ #item-columnas{
+    margin-top: 10%;
+    margin-left: 5rem;
+}
+
+.button{
+    margin-top: 4rem;
+    font-size: 18px;
+}
+
+.button:hover{
+    color: rgba(5, 180, 255, 0.601);
+    transition: color 0.5s ease;
+}
+
+.p-3{
+    
+    margin-left: 100px;
+}

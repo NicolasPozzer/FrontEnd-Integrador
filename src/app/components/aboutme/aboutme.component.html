@@ -1,43 +1,42 @@
 <!--======================================-->
 <!--Seccion de About-->
 <!--======================================-->
+<h1 class="text-center">Sobre <span class="text-primary">Mi</span></h1>
 
-<section id="sobre-mi" class="about">
-  <h1 class="text-center">Sobre <span class="text-primary">Mi</span></h1>
-  <div class="container text-center">
-    <div class="row">
-      <div class="col-3">
+<div class="container overflow-hidden">
+  <div class="row gy-5 mx-auto" id="item-columnas">
+    <div class="col-6">
+
+      <div class="p-3">
         <img [src]="persona.img" class="rounded-circle">
-        <!--<img src = {{ persona.img }} class="rounded-circle">-->
-        <div id="pencil-trash" class="mx-auto" *ngIf="isLogged">
-          <app-button-edit-aboutme></app-button-edit-aboutme>
+         
+            <div class="rounded-circle" >
+              <div id="edit-boton" *ngIf="isLogged">
+            <app-button-edit-aboutme></app-button-edit-aboutme>
+          </div>
+          </div>
+          
         </div>
-      </div>
       
+    </div>
+      <div class="col-6">
 
-      <div class="col-6 mt-5">
-        <div class="d-flex mx-auto" >
-          <p id="nombre">{{ persona.sobremi }}</p>
-          <div id="pencil" *ngIf="isLogged">
-          <app-button-edit-aboutme></app-button-edit-aboutme>
+        <div id="palabras-container">
+          <div class="d-flex">
+            <p id="nombre">{{ persona.sobremi }}</p>
+            <div id="pencil" *ngIf="isLogged">
+              <app-button-edit-aboutme></app-button-edit-aboutme>
+            </div>
+          </div>
+
+          <div id="pencil-trash">
+            <a href="../../../assets/pdf/mi-cv.pdf" download="CV"><button class="boton-descargar-cv">
+                Descargar CV
+              </button></a>
+            <!--<app-trash-aboutme></app-trash-aboutme>-->
           </div>
         </div>
-        
-        <div id="pencil-trash">
-          <a href="../../../assets/pdf/mi-cv.pdf" download="CV"><button class="boton-descargar-cv">
-            Descargar CV
-          </button></a>
-          <!--<app-trash-aboutme></app-trash-aboutme>-->
-        </div>
       </div>
-
     </div>
   </div>
 
-  <app-modal-foto-perfil></app-modal-foto-perfil>
-
-
-  <app-modal-trash-aboutme></app-modal-trash-aboutme>
-  
-
-</section>
