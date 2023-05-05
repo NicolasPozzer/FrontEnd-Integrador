@@ -18,6 +18,8 @@ const routes: Routes = [
   {path: 'editacercade/1', component:EditAboutmeComponent},
   {path: 'editproject/:id', component:EditProyectoComponent},
   {path: 'editskill1/:id', component:Editskill1Component},
+  {path: 'editskill2/:id', component:Editskill2Component},
+  {path: 'editskill3/:id', component:Editskill3Component},
   {path: '**', component:ErrorComponent}
 ];
 

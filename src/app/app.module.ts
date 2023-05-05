@@ -17,8 +17,6 @@ import { TrashAboutmeComponent } from './components/buttons/trash-aboutme/trash-
 import { ModalTrashAboutmeComponent } from './components/modals/modal-trash-aboutme/modal-trash-aboutme.component';
 import { ErrorComponent } from './components/error/error.component';
 import { SkillsComponent } from './components/skills/skills.component';
-import { Skill2Component } from './components/skills/skill2/skill2.component';
-import { Skill3Component } from './components/skills/skill3/skill3.component';
 import { ItemExpeduComponent } from './components/item-expedu/item-expedu.component';
 import { EducacionComponent } from './components/educacion/educacion.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
@@ -41,6 +39,10 @@ import { EditProyectoComponent } from './components/proyecto/edit-proyecto/edit-
 import { Editskill1Component } from './components/skills/skill1-front/editskill1/editskill1.component';
 import { NewEducacionComponent } from './components/educacion/new-educacion/new-educacion.component';
 import { EditEducacionComponent } from './components/educacion/edit-educacion/edit-educacion.component';
+import { Newskill2Component } from './components/skills/skill2-back/newskill2/newskill2.component';
+import { Editskill2Component } from './components/skills/skill2-back/editskill2/editskill2.component';
+import { Newskill3Component } from './components/skills/skill3-soft/newskill3/newskill3.component';
+import { Editskill3Component } from './components/skills/skill3-soft/editskill3/editskill3.component';
 
 
 
@@ -61,8 +63,6 @@ import { EditEducacionComponent } from './components/educacion/edit-educacion/ed
     ModalTrashAboutmeComponent,
     ErrorComponent,
     SkillsComponent,
-    Skill2Component,
-    Skill3Component,
     ItemExpeduComponent,
     EducacionComponent,
     ExperienciaComponent,
@@ -81,7 +81,11 @@ import { EditEducacionComponent } from './components/educacion/edit-educacion/ed
     EditProyectoComponent,
     Editskill1Component,
     NewEducacionComponent,
-    EditEducacionComponent
+    EditEducacionComponent,
+    Newskill2Component,
+    Editskill2Component,
+    Newskill3Component,
+    Editskill3Component
  
  
     
