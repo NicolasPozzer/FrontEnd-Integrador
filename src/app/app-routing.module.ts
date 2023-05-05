@@ -8,6 +8,8 @@ import { EditAboutmeComponent } from './components/aboutme/edit-aboutme/edit-abo
 import { EditProyectoComponent } from './components/proyecto/edit-proyecto/edit-proyecto.component';
 import { Editskill1Component } from './components/skills/skill1-front/editskill1/editskill1.component';
 import { EditEducacionComponent } from './components/educacion/edit-educacion/edit-educacion.component';
+import { Editskill2Component } from './components/skills/skill2-back/editskill2/editskill2.component';
+import { Editskill3Component } from './components/skills/skill3-soft/editskill3/editskill3.component';
 
 
 const routes: Routes = [

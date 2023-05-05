@@ -1,48 +1,56 @@
- <!--======================================-->
-    <!--HABILIDADES-->
-    <!--======================================-->
-  
-    <div>
-        <h2 id="habilidades-texto" class="fw-bold text-center">Habilidades</h2>
-        <p id="descripcion-habilidades" class="fs-6 mt-3 pb-3 text-center ">
-          Estas son algunas de mis habilidades, tanto técnicas como blandas, con las que cuento para el ámbito profesional.
-        </p>
-    </div>
-    
-    <div class="container text-center">
-        <div class="row">
-    
-          <div class="col mt-5">  <!--=====COLUMNA 1======-->
-            <h3>Front-End</h3>
-              <div class="mx-auto" *ngIf="isLogged">
-                <i class="fa-solid fa-circle-plus mt-5 mb-2" type="button" data-bs-toggle="modal"
-                  data-bs-target="#newskill1-modalLabel"></i>
-              </div>
-            
-            <br>
-            
-            <app-skill1-front></app-skill1-front>
-          </div>
-          
-        
-          <div class="col mt-5">  <!--=====COLUMNA 2======-->
-            
-            <h3>Back-End</h3>
-            <br>
-    
-            <app-skill2></app-skill2>
+<!--======================================-->
+<!--HABILIDADES-->
+<!--======================================-->
 
-          </div>
-    
-    
-          <div class="col mt-5"> <!--=====COLUMNA 3======-->
-            <h3>Soft-Skills</h3>
-            <br>
-
-            <app-skill3></app-skill3>
-          </div>
-    </div>
+<div>
+  <h2 id="habilidades-texto" class="fw-bold text-center">Habilidades</h2>
+  <p id="descripcion-habilidades" class="fs-6 mt-3 pb-3 text-center ">
+    Estas son algunas de mis habilidades, tanto técnicas como blandas, con las que cuento para el ámbito profesional.
+  </p>
 </div>
 
-                
+<div class="container text-center">
+  <div class="row">
+
+    <div class="col mt-5"> <!--=====COLUMNA 1======-->
+      <h3>Front-End</h3>
+      <div class="mx-auto" *ngIf="isLogged">
+        <i class="fa-solid fa-circle-plus mt-5 mb-2" type="button" data-bs-toggle="modal"
+          data-bs-target="#newskill1-modalLabel"></i>
+      </div>
+
+      <br>
+
+      <app-skill1-front></app-skill1-front>
+    </div>
+
+    <div class="col mt-5"> <!--=====COLUMNA 2======-->
+      <h3>Back-End</h3>
+      <div class="mx-auto" *ngIf="isLogged">
+        <i class="fa-solid fa-circle-plus mt-5 mb-2" type="button" data-bs-toggle="modal"
+          data-bs-target="#newskill2-modalLabel"></i>
+      </div>
+
+      <br>
+
+      <app-skill2-back></app-skill2-back>
+    </div>
+
+    <div class="col mt-5"> <!--=====COLUMNA 3======-->
+      <h3>Soft-Skills</h3>
+      <div class="mx-auto" *ngIf="isLogged">
+        <i class="fa-solid fa-circle-plus mt-5 mb-2" type="button" data-bs-toggle="modal"
+          data-bs-target="#newskill3-modalLabel"></i>
+      </div>
+
+      <br>
+
+      <app-skill3-soft></app-skill3-soft>
+    </div>
+  </div>
+</div>
+
+
 <app-newskill1></app-newskill1>
+<app-newskill2></app-newskill2>
+<app-newskill3></app-newskill3>
