@@ -1,6 +1,7 @@
-/*lapiz COLOR*/
-.fa-solid.fa-pencil.fa-2xl:hover{
-    color: rgb(103, 109, 103);
-  }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+
+#letras{
+    font-family: 'Montserrat', sans-serif;
+}
 
