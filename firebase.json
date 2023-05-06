@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/proyecto-angular-routing",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
