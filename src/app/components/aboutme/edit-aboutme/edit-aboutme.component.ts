@@ -19,7 +19,7 @@ export class EditAboutmeComponent implements OnInit {
     private router: Router,private tokenService: TokenService, private formBuilder: FormBuilder) { 
       this.form= this.formBuilder.group({
         password:['',[Validators.required, Validators.maxLength(30)]],
-        email:['', [Validators.required, Validators.maxLength(256)]],
+        email:['', [Validators.required, Validators.maxLength(460)]],
         name:['', [Validators.required]],
         uri:['', [Validators.required]],
         ape:['', [Validators.required]],
