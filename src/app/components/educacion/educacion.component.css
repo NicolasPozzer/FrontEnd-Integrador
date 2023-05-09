@@ -1,5 +1,9 @@
 /*#container_edu{margin-left: 10rem; margin-right: 5rem;}*/
 
+#contenido{
+    margin-bottom: 5%;
+}
+
 .container{
     display: flex;
     flex-direction: row;

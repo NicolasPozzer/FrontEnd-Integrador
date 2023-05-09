@@ -9,7 +9,7 @@
     <div class="col mt-5"> <!--=====COLUMNA 1======-->
 
       <div class="p-3">
-        <h2 id="titulo-experiencia" class="text-primary text-center">
+        <h2 id="titulos1" class="text-primary text-center">
           Experiencia Laboral
           <div *ngIf="isLogged">
             <button class="buttonn" *ngIf="isLogged">
@@ -20,7 +20,7 @@
             </button>
           </div>
         </h2>
-        <div class="padexp"><app-experiencia></app-experiencia></div>
+        <app-experiencia></app-experiencia>
       </div>
 
 
@@ -30,7 +30,7 @@
 
       
       <div class="p-3">
-        <h2 id="titulo-educacion" class="text-primary text-center">
+        <h2 id="titulos2" class="text-primary text-center">
           Educacion
           <div *ngIf="isLogged">
             <button class="button" *ngIf="isLogged">
@@ -41,7 +41,9 @@
             </button>
           </div>
         </h2>
+        
         <app-educacion></app-educacion>
+      
       </div>
 
     </div>
