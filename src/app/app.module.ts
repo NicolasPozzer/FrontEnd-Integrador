@@ -41,6 +41,8 @@ import { Newskill2Component } from './components/skills/skill2-back/newskill2/ne
 import { Editskill2Component } from './components/skills/skill2-back/editskill2/editskill2.component';
 import { Newskill3Component } from './components/skills/skill3-soft/newskill3/newskill3.component';
 import { Editskill3Component } from './components/skills/skill3-soft/editskill3/editskill3.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 
@@ -81,7 +83,9 @@ import { Editskill3Component } from './components/skills/skill3-soft/editskill3/
     Newskill2Component,
     Editskill2Component,
     Newskill3Component,
-    Editskill3Component
+    Editskill3Component,
+    HeaderComponent,
+    FooterComponent
  
  
     
