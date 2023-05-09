@@ -1,42 +1,42 @@
 <!--======================================-->
 <!--Seccion de About-->
 <!--======================================-->
-<h1 class="text-center">Sobre <span class="text-primary">Mi</span></h1>
+<h1 id="sobre-mi">Sobre <span class="text-primary">Mi</span></h1>
 
-<div class="container overflow-hidden">
-  <div class="row gy-5 mx-auto" id="item-columnas">
-    <div class="col-6">
 
-      <div class="p-3">
-        <img [src]="persona.img" class="rounded-circle">
+<div class="container">
+  <div class="row">
+
+    <div class="col mt-5"> <!--=====COLUMNA 1======-->
+      <div id="col-imagen">
+      <img [src]="persona.img" class="rounded-circle">
          
-            <div class="rounded-circle" >
-              <div id="edit-boton" *ngIf="isLogged">
-            <app-button-edit-aboutme></app-button-edit-aboutme>
-          </div>
-          </div>
-          
-        </div>
-      
+      <div class="rounded-circle" >
+        <div id="edit-boton" *ngIf="isLogged">
+      <app-button-edit-aboutme></app-button-edit-aboutme>
     </div>
-      <div class="col-6">
+    </div>
+    </div>
 
-        <div id="palabras-container">
-          <div class="d-flex">
-            <p id="nombre">{{ persona.sobremi }}</p>
-            <div id="pencil" *ngIf="isLogged">
-              <app-button-edit-aboutme></app-button-edit-aboutme>
-            </div>
-          </div>
+    </div>
 
-          <div id="pencil-trash">
-            <a href="../../../assets/pdf/mi-cv.pdf" download="CV"><button class="boton-descargar-cv">
-                Descargar CV
-              </button></a>
-            <!--<app-trash-aboutme></app-trash-aboutme>-->
-          </div>
-        </div>
+    <div id="col-derecha" class="col mt-5"> <!--=====COLUMNA 2======-->
+
+      <div id="descrip">
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      <p >{{ persona.sobremi }}</p>
+      <div id="pencil" *ngIf="isLogged">
+        <app-button-edit-aboutme></app-button-edit-aboutme>
+      </div>
+      <div id="pencil-trash">
+        <a href="../../../assets/pdf/mi-cv.pdf" download="CV"><button class="boton-descargar-cv">
+            Descargar CV
+          </button></a>
+        <!--<app-trash-aboutme></app-trash-aboutme>-->
       </div>
     </div>
+    </div>
   </div>
+</div>
+
 

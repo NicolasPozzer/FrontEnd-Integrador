@@ -1,30 +1,36 @@
  /* Aplica el efecto a todos los elementos con la clase "hover-effect" */
  .border-celeste {
-    position: relative;
-    display: inline-block;
-  }
-  
-  /* Agrega un borde sólido al elemento */
-  .border-celeste::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border: 2px solid transparent;
-  }
-  
-/* Cambia el color del borde al pasar el mouse por encima del elemento */
-.border-celeste::before {
-    border-image: linear-gradient(to bottom, #f4f4f4, #f4f4f4 25%, #f4f4f4 75%, #f4f4f4);
-    border-image-slice: 1;
-    pointer-events: none; 
-  }
-  
+   position: relative;
+   display: inline-block;
+ }
 
-  .button:hover{
-    color: rgba(5, 180, 255, 0.601);
-    transition: color 0.5s ease;
-}
-  
+ /* Agrega un borde sólido al elemento */
+ .border-celeste::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   border: 2px solid transparent;
+ }
+
+ /* Cambia el color del borde al pasar el mouse por encima del elemento */
+ .border-celeste::before {
+   border-image: linear-gradient(to bottom, #f4f4f4, #f4f4f4 25%, #f4f4f4 75%, #f4f4f4);
+   border-image-slice: 1;
+   pointer-events: none;
+ }
+
+
+ .button:hover {
+   color: rgba(5, 180, 255, 0.601);
+   transition: color 0.5s ease;
+ }
+
+
+ .container-fluid {
+
+   margin-bottom: 4%;
+
+ }

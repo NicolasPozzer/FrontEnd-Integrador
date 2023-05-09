@@ -1,9 +1,15 @@
-<div class="container overflow-hidden">
-  <div class="row gy-5 mx-auto" id="expyedu_container">
-    <div class="col-6">
+
+<!--======================================-->
+<!--Item Exp Edu-->
+<!--======================================-->
+
+<div class="container">
+  <div class="row">
+
+    <div class="col mt-5"> <!--=====COLUMNA 1======-->
 
       <div class="p-3">
-        <h2 id="titulo-experiencia" class="text-primary">
+        <h2 id="titulo-experiencia" class="text-primary text-center">
           Experiencia Laboral
           <div *ngIf="isLogged">
             <button class="buttonn" *ngIf="isLogged">
@@ -16,11 +22,15 @@
         </h2>
         <div class="padexp"><app-experiencia></app-experiencia></div>
       </div>
-    </div>
-    <div class="col-6">
 
+
+    </div>
+
+    <div id="col-derecha" class="col mt-5"> <!--=====COLUMNA 2======-->
+
+      
       <div class="p-3">
-        <h2 id="titulo-educacion" class="text-primary">
+        <h2 id="titulo-educacion" class="text-primary text-center">
           Educacion
           <div *ngIf="isLogged">
             <button class="button" *ngIf="isLogged">
@@ -33,9 +43,11 @@
         </h2>
         <app-educacion></app-educacion>
       </div>
+
     </div>
   </div>
 </div>
+
 
 <app-new-experiencia></app-new-experiencia>
 <app-new-educacion></app-new-educacion>

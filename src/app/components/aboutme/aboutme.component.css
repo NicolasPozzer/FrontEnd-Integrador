@@ -11,16 +11,12 @@
 
 
 /*Titulo sobre Mi*/
-.text-center{
-    padding-top: 120px;
-    margin-bottom: -120px;
+#sobre-mi{
+    margin-top: 7%;
+    text-align: center;
+    margin-bottom: 7%;
 }
 
-#palabras-container{
-    position: relative;
-    margin-top: 12%;
-    padding-right: 20%;
-}
 
 #edit-boton{
     margin-top: 7%;
@@ -112,4 +108,17 @@
 .p-3{
     
     margin-left: 100px;
+}
+
+#col-derecha{
+    padding: 10%;
+    
+}
+
+#descrip{
+    margin-top: -12%;
+}
+
+#col-imagen{
+    padding-left: 20%;
 }

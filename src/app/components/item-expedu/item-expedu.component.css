@@ -1,14 +1,4 @@
-#expyedu_container{
-    margin-top: 10rem;
-    margin-left: 5rem;
-}
-#titulo-educacion{
-    margin-left: 10%;
-}
-#titulo-experiencia{
-    margin-left: 20%;
-    
-}
+
 
 .button{
     margin-top: 4rem;
@@ -26,14 +16,6 @@
     transition: color 0.5s ease;
 }
 
-.p-3{
-    
-    margin-left: 100px;
-}
-
-.padexp{
-    padding-left: 5.5%;
-    padding-right: 10%;
-    margin-right: -20%;
-    
+.container{
+    margin-bottom: 20%;
 }
