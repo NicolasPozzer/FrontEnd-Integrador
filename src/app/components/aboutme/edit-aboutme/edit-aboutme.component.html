@@ -3,27 +3,71 @@
     <div class="row">
         <div>
             <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <form [formGroup]="form" (ngSubmit)="onEnviar($event)">
                 <div class="form-group mt-4 mb-2">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="persona.nombre" required>
-                </div>
-                <div class="form-group mt-4 mb-2">
-                    <label for="apellido">Descripcion de la tarea</label>
-                    <input type="text" class="form-control" id="apellido" name="apellido" [(ngModel)]="persona.apellido" required>
-                </div>
-                <div class="form-group mt-4 mb-2">
-                    <label for="descripcion">Descripcion de la tarea</label>
-                    <input type="text" class="form-control" id="descripcion" name="descripcion" [(ngModel)]="persona.descripcion" required>
-                </div>
-                <div class="form-group mt-4 mb-2">
-                    <label for="sobremi">Descripcion de la tarea</label>
-                    <input type="text" class="form-control" id="sobremi" name="sobremi" [(ngModel)]="persona.sobremi" required>
-                </div>
-                <div class="form-group mt-4 mb-2">
-                    <label for="img">imagenn</label>
-                    <input type="text" class="form-control" id="img" name="img" [(ngModel)]="persona.img" required>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" class="form-control" formControlName="name" id="nombre" name="nombre" [(ngModel)]="persona.nombre" required>
                 </div>
 
+                <div *ngIf="Name?.errors && Name?.touched">
+                    <p *ngIf="Name?.hasError('required')" class="error">
+                      Este Campo es requerido.
+                    </p>
+                  </div>
+                
+
+
+                <div class="form-group mt-4 mb-2">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" class="form-control" formControlName="ape" id="apellido" name="apellido" [(ngModel)]="persona.apellido" required>
+                </div>
+
+                <div *ngIf="Ape?.errors && Ape?.touched">
+                    <p *ngIf="Ape?.hasError('required')" class="error">
+                      Este Campo es requerido.
+                    </p>
+                  </div>
+
+                <div class="form-group mt-4 mb-2">
+                    <label for="descripcion">Simple Descripcion:</label>
+                    <input type="text" class="form-control" formControlName="password" id="descripcion" name="descripcion" [(ngModel)]="persona.descripcion" required>
+                </div>
+
+                <div *ngIf="Password?.errors && Password?.touched">
+                    <p *ngIf="Password?.hasError('required')" class="error">
+                      Este Campo es requerido.
+                    </p>
+                    <p *ngIf="Password?.errors?.['maxlength']" class="error">
+                        El password debe ser de maximo 30 caracteres.
+                      </p>
+                  </div>
+
+                <div class="form-group mt-4 mb-2">
+                    <label for="sobremi">Sobre Mi:</label>
+                    <input type="text" class="form-control" formControlName="email" id="sobremi" name="sobremi" [(ngModel)]="persona.sobremi" required>
+                </div>
+
+                <div *ngIf="Mail?.errors && Mail?.touched">
+                    <p *ngIf="Mail?.hasError('required')" class="error">
+                      Este Campo es requerido.
+                    </p>
+                    <p *ngIf="Mail?.errors?.['maxlength']" class="error">
+                        El password debe ser de maximo 256 caracteres.
+                      </p>
+                  </div>
+
+                <div class="form-group mt-4 mb-2">
+                    <label for="img">URL de Imagen:</label>
+                    <input type="text" class="form-control" formControlName="uri" id="img" name="img" [(ngModel)]="persona.img" required>
+                </div>
+
+                <div *ngIf="Uri?.errors && Uri?.touched">
+                    <p *ngIf="Uri?.hasError('required')" class="error">
+                      Este Campo es requerido.
+                    </p>
+                  </div>
+
+            </form>
                 <button class="btn btn-primary mt-4">
                     Actualizar
                 </button>

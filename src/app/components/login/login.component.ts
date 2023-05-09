@@ -64,7 +64,7 @@ export class LoginComponent implements OnInit {
   }
  
   get Mail(){
-   return this.form.get("nombreUsuario");
+   return this.form.get("email");
   }
 
   get PasswordValid(){

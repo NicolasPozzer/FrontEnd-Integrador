@@ -27,7 +27,7 @@ export class NewExperienciaComponent {
         alert("Experiencia añadida");
         this.router.navigate(['']);
       }, err => {
-        alert("Error Falló agregar al Agregar Experiencia");
+        alert("Error Falló agregar al Agregar Experiencia Campos Incompletos!!");
         this.router.navigate(['']);
       }
     )

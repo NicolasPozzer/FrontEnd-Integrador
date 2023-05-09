@@ -25,7 +25,7 @@ export class NewProyectoComponent {
         alert("Proyecto añadido");
         this.router.navigate(['']);
       }, err => {
-        alert("Error Falló agregar al Agregar Proyecto");
+        alert("Error Falló agregar al Agregar Proyecto Campos Incompletos!!");
         this.router.navigate(['']);
       }
     )

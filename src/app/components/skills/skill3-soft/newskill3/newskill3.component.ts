@@ -24,7 +24,7 @@ export class Newskill3Component {
         alert("Habilidad añadida");
         this.router.navigate(['']);
       }, err => {
-        alert("Error Falló agregar al Agregar Habilidad");
+        alert("Error Falló agregar al Agregar Habilidad Campos Incompletos!!");
         this.router.navigate(['']);
       }
     )
