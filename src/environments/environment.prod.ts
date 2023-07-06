@@ -2,7 +2,7 @@
 export const environment = {
 
     production: true,
-    URL: 'https://backend-nico-portfolio7.onrender.com/'
+    URL: 'https://backend-integrador-production.up.railway.app/'
   };
 
 /* Para desarrollo
