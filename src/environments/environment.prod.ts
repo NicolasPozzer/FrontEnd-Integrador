@@ -2,7 +2,7 @@
 export const environment = {
 
     production: true,
-    URL: 'https://tuma15.onrender.com/'
+    URL: 'https://backend-nico-portfolio7.onrender.com/'
   };
 
 /* Para desarrollo
