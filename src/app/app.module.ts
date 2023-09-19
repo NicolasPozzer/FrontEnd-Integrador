@@ -10,7 +10,6 @@ import { RedesComponent } from './components/redes/redes.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { Carousel1Component } from './components/modals/carousel1/carousel1.component';
 import { Carousel2Component } from './components/modals/carousel2/carousel2.component';
-import { Carousel3Component } from './components/modals/carousel3/carousel3.component';
 import { AboutmeComponent } from './components/aboutme/aboutme.component';
 import { TrashAboutmeComponent } from './components/buttons/trash-aboutme/trash-aboutme.component';
 import { ErrorComponent } from './components/error/error.component';
@@ -56,7 +55,6 @@ import { FooterComponent } from './components/footer/footer.component';
     CarouselComponent,
     Carousel1Component,
     Carousel2Component,
-    Carousel3Component,
     AboutmeComponent,
     TrashAboutmeComponent,
     ErrorComponent,
