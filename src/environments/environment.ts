@@ -2,7 +2,7 @@
 export const environment = {
 
     production: false,
-    URL: 'https://project-nico.onrender.com/'
+    URL: 'http://ec2-15-228-23-164.sa-east-1.compute.amazonaws.com:8080/'
   };
 
 

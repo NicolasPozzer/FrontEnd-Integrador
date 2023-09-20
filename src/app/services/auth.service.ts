@@ -10,7 +10,7 @@ import { JwtDto } from '../components/model/jwt-dto';
   providedIn: 'root'
 })
 export class AuthService {
-  URL = environment.URL + 'auth/';
+  URL = 'https://backend-login-yq7o.onrender.com/auth/';
 
 
   constructor(private httpClient: HttpClient) { }

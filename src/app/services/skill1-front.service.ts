@@ -21,7 +21,7 @@ export class Skill1FrontService {
   } 
 
   public save(skill1front: Skill1front): Observable<any>{
-    return this.httpClient.post<any>(this.URL + 'create', skill1front);
+    return this.httpClient.post<any>(this.URL + 'https://backend-login-yq7o.onrender.com/create', skill1front);
   }
 
   public update(id: number, skill1front: Skill1front): Observable<any>{
