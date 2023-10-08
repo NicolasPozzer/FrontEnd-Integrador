@@ -2,7 +2,7 @@
 export const environment = {
 
     production: false,
-    URL: 'https://back-portfoliorender.onrender.com'
+    URL: 'http://18.230.134.91:8080'
   };
 
 
