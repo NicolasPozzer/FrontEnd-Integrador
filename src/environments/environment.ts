@@ -2,7 +2,8 @@
 export const environment = {
 
     production: false,
-    URL: 'https://project-nico.onrender.com/'
+    URL: 'https://nicopozzer-backend.fly.dev'
+    //URL: 'http://localhost:8080'
   };
 
 
@@ -10,6 +11,6 @@ export const environment = {
   export const environment = {
 
     production: false,
-    URL: 'http://localhost:8080/'
+    URL: 'http://localhost:8080'
   };
 */
