@@ -2,7 +2,8 @@
 export const environment = {
 
     production: true,
-    URL: 'http://18.230.134.91:8080'
+    URL: 'https://nicopozzer-backend.fly.dev'
+    //URL: 'http://localhost:8080'
   };
 
 /* Para desarrollo
