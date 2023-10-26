@@ -1,30 +1,56 @@
-<div *ngFor="let Skill2back of skill2">
-    <h5>{{ Skill2back.nombre }}</h5>
-   <div class="progress " role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-     <div class="progress-bar bg-info" style.width ="{{ Skill2back.porcentaje }}%">
+<div>
+  <h5>Spring Boot - Java</h5>
+ <div class="progress " role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+   <div class="progress-bar bg-info" style.width ="{{ 65 }}%">
 
-     </div>
-     
-        
-    <br>
-  </div>
-  <div class="d-flex">
-    <h5 class="text">{{ Skill2back.porcentaje }}%</h5>
-  
-    <!--BOTONES EDITAR/BORRAR-->
-    <div id="pencill-trash" class="mx-auto" *ngIf="isLogged">
+   </div>
+   
       
-      <i class="fa-solid fa-pencil fa-2xl" 
-        routerLink="/editskill2/{{Skill2back.id}}" 
-        type="button">
-      </i>
-  
-      <i id="trashhh" class="fa-solid fa-trash fa-2xl"
-        data-bs-toggle="modal"
-        (click)="delete(Skill2back.id)">
-      </i>
-  
-  </div>
-  </div>
+  <br>
+</div>
+<div class="d-flex">
+  <h5 class="text">{{ 65 }}%</h5>
 
+  <!--BOTONES EDITAR/BORRAR-->
+  <div id="pencill-trash" class="mx-auto" *ngIf="isLogged">
+    
+    <i class="fa-solid fa-pencil fa-2xl" 
+      routerLink="/editskill3/" 
+      type="button">
+    </i>
 
+    <i id="trashhh" class="fa-solid fa-trash fa-2xl"
+      data-bs-toggle="modal"
+      (click)="delete()">
+    </i>
+
+</div>
+</div>
+<div>
+  <h5>MySQL</h5>
+ <div class="progress " role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+   <div class="progress-bar bg-info" style.width ="{{ 90 }}%">
+
+   </div>
+   
+      
+  <br>
+</div>
+<div class="d-flex">
+  <h5 class="text">{{ 90 }}%</h5>
+
+  <!--BOTONES EDITAR/BORRAR-->
+  <div id="pencill-trash" class="mx-auto" *ngIf="isLogged">
+    
+    <i class="fa-solid fa-pencil fa-2xl" 
+      routerLink="/editskill3/" 
+      type="button">
+    </i>
+
+    <i id="trashhh" class="fa-solid fa-trash fa-2xl"
+      data-bs-toggle="modal"
+      (click)="delete()">
+    </i>
+
+</div>
+</div>
