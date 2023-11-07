@@ -1,21 +1,21 @@
 
-<div id="contenido" *ngFor="let Educacion of edu">
+<div id="contenido">
     <div class="container">
       <div class="image">
         <img src="../../../assets/img/item_extend.png" alt="item_image">
       </div>
       <div class="text">
-        <h4>{{ Educacion.nombreE }}</h4>
-        <p>{{ Educacion.iniciO }} - {{ Educacion.fiN }}</p>
-        <p>{{ Educacion.marcA }}</p>
-        <p>{{ Educacion.descripcionE }}</p>
+        <h4>Programador</h4>
+        <p>01/03/2018 - En Curso.</p>
+        <p>Lic. en Sistemas de la Informacion.</p>
+        <p>Cursando actualmente, donde aprendí diversas tecnologías como: C, C++ y MySQL, entre otras.</p>
       </div>
     </div>
     <div id="pencil-trash" *ngIf="isLogged">
-      <div routerLink="/educacion/{{Educacion.id}}">
+      <div routerLink="/educacion/">
         <i class="fa-solid fa-pencil fa-2xl"></i>
       </div>
-      <i class="fa-solid fa-trash fa-2xl" type="button" data-bs-toggle="modal" (click)="delete(Educacion.id)">
+      <i class="fa-solid fa-trash fa-2xl" type="button" data-bs-toggle="modal" (click)="delete()">
       </i>
   
       <!--
