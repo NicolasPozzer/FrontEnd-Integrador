@@ -3,38 +3,37 @@
     <!--======================================-->
     
     <div id="carouselExampleFade" class="carousel slide carousel-fade">
-        <div class="carousel-text">
-            <h2 id="nombre">Nicolas Pozzer</h2>
-            <p>FullStack Developer Jr.</p>
-            <div id="pencil-trash" class="mx-auto" *ngIf="isLogged">
-              <app-button-edit-aboutme></app-button-edit-aboutme>
-            </div>
-            <!--boton lapiz editar nombre
-            <app-edit-name-carousel></app-edit-name-carousel>-->
+      <div class="carousel-text">
+          <h2 id="nombre">{{ persona.nombre }} {{ persona.apellido }}</h2>
+          <p>{{ persona.descripcion }}</p>
+          <div id="pencil-trash" class="mx-auto" *ngIf="isLogged">
+            <app-button-edit-aboutme></app-button-edit-aboutme>
           </div>
-        <div class="carousel-inner">
-            
-          <div class="carousel-item active">
-            
-            <img src="./assets/img/slide1.jpg" class="d-block w-100" alt="slide1">
-          </div>
-
-          <div class="carousel-item">
-            
-            <img src="./assets/img/slide2.jpg" class="d-block w-100" alt="slide2">
-          </div>
-
+          <!--boton lapiz editar nombre
+          <app-edit-name-carousel></app-edit-name-carousel>-->
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+      <div class="carousel-inner">
+          
+        <div class="carousel-item active">
+          
+          <img src="./assets/img/slide1.jpg" class="d-block w-100" alt="slide1">
+        </div>
+
+        <div class="carousel-item">
+          
+          <img src="./assets/img/slide2.jpg" class="d-block w-100" alt="slide2">
+        </div>
+
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
 <app-carousel1></app-carousel1>
 <app-carousel2></app-carousel2>
-

@@ -1,92 +1,66 @@
-<!--
-  =========================================
-  ===========UN PROYECTO===================
-  =========================================
--->
+
 <div class="row justify-content-between my-4 mx-auto">
-  <div class="col-md mb-4">
-    <div class="cuadrante" [style.background-image]="'url(https://i.imgur.com/6Sp3vBF.png)'">
+  <div class="col-md mb-4" *ngFor="let proyecto of pro">
+    <div class="cuadrante" [style.background-image]="'url(' + proyecto.descripcionE + ')'">
       <!--BOTON CON LINK-->
       <!--<button class="hover-hide-playdemo" routerLink="/editexp/{{proyecto.urlDemo}}">-->
-          <a href="https://portfolio-nicolaspozzer.web.app/"  target = "_blank">
+          <a href="{{ proyecto.urldemO }}"  target = "_blank">
             <button  class="hover-hide-playdemo">
               Play Demo
             </button>
           </a>
           
       <div class="hover-hide">
-        <h4 class="nombreE mx-auto">Mi Portfolio</h4> 
+        <h4 class="nombreE mx-auto">{{ proyecto.nombreE }}</h4> 
       </div>
     </div>
 
     <div class="mx-auto mt-4" *ngIf="isLogged" id="pencil-trash">
-      <button class="btn btn-light" routerLink="/editproject/">
+      <button class="btn btn-light" routerLink="/editproject/{{ proyecto.id }}">
         <i class="bi bi-pencil-fill"></i> EDITAR
       </button>
-      <i class="fa-solid fa-trash fa-2xl" type="button" data-bs-toggle="modal" (click)="delete()"></i>
+      <i class="fa-solid fa-trash fa-2xl" type="button" data-bs-toggle="modal" (click)="delete(proyecto.id)"></i>
     </div>
   </div>
 </div>
 
 
-<!--
-  =========================================
-  ===========UN PROYECTO===================
-  =========================================
--->
-<div class="row justify-content-between my-4 mx-auto">
-  <div class="col-md mb-4">
-    <div class="cuadrante" [style.background-image]="'url(https://img.freepik.com/premium-vector/financial-logo-concept-trading-logo-trading-logo-template-vector_10250-5200.jpg)'">
-      <!--BOTON CON LINK-->
-      <!--<button class="hover-hide-playdemo" routerLink="/editexp/{{proyecto.urlDemo}}">-->
-          <a href="https://es.tradingview.com/script/f0pPTBRR/"  target = "_blank">
-            <button  class="hover-hide-playdemo">
-              Play Demo
-            </button>
-          </a>
-          
-      <div class="hover-hide">
-        <h4 class="nombreE mx-auto">Trading by Niko</h4> 
-      </div>
-    </div>
 
-    <div class="mx-auto mt-4" *ngIf="isLogged" id="pencil-trash">
-      <button class="btn btn-light" routerLink="/editproject/">
-        <i class="bi bi-pencil-fill"></i> EDITAR
-      </button>
-      <i class="fa-solid fa-trash fa-2xl" type="button" data-bs-toggle="modal" (click)="delete()"></i>
-    </div>
-  </div>
-</div>
+
+
 
 
 
 <!--
-  =========================================
-  ===========UN PROYECTO===================
-  =========================================
+  BOTON CON PREGUNTA SI ESTA SEGURO DE ELIMINAR
+  <i class="fa-solid fa-trash fa-2xl" type="button" data-bs-toggle="modal"
+  data-bs-target="#modal-clear1er-experiencia" (click)="delete(Experiencia.id)"></i>
 -->
-<div class="row justify-content-between my-4 mx-auto">
-  <div class="col-md mb-4">
-    <div class="cuadrante" [style.background-image]="'url(https://static.vecteezy.com/system/resources/previews/011/468/313/original/financial-bull-logo-design-trade-bull-chart-finance-logo-economy-finance-chart-bar-business-productivity-logo-icon-free-vector.jpg)'">
-      <!--BOTON CON LINK-->
-      <!--<button class="hover-hide-playdemo" routerLink="/editexp/{{proyecto.urlDemo}}">-->
-          <a href="https://es.tradingview.com/script/E0wmVCab/"  target = "_blank">
-            <button  class="hover-hide-playdemo">
-              Play Demo
-            </button>
-          </a>
-          
-      <div class="hover-hide">
-        <h4 class="nombreE mx-auto">Trading Sessions</h4> 
-      </div>
-    </div>
 
-    <div class="mx-auto mt-4" *ngIf="isLogged" id="pencil-trash">
-      <button class="btn btn-light" routerLink="/editproject/">
-        <i class="bi bi-pencil-fill"></i> EDITAR
-      </button>
-      <i class="fa-solid fa-trash fa-2xl" type="button" data-bs-toggle="modal" (click)="delete()"></i>
-    </div>
+
+    <!--<p>{{ proyecto.inicio }} - {{ proyecto.fin }}</p>
+    <p>{{ proyecto.nivel }}</p>-->
+
+
+
+
+
+
+    <!--BACKUP-->
+<!-------------------
+
+<div class="container my-4" *ngFor="let proyecto of pro">
+  <div class="border-celeste rounded p-3">
+    <h4>{{ proyecto.nombreE }}</h4>
+    <p>{{ proyecto.descripcionE }}</p>
+  </div>
+  
+  <div class="mx-auto" *ngIf="isLogged" id="pencil-trash">
+    <button class="btn btn-light" routerLink="/editproject/{{proyecto.id}}">
+      <i class="bi bi-pencil-fill"></i> EDITAR
+    </button>
+    <i class="fa-solid fa-trash fa-2xl" type="button" data-bs-toggle="modal" (click)="delete(proyecto.id)"></i>
   </div>
 </div>
+
+    -->
