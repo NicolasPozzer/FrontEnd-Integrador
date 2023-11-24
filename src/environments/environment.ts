@@ -1,7 +1,7 @@
 /* Para produccion*/
 export const environment = {
 
-    production: false,
+    production: true,
     URL: 'https://project-nico.onrender.com'
     //URL: 'http://localhost:8080'
   };
